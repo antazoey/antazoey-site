@@ -21,4 +21,4 @@ Set Pages:
 
     gsutil web set -m index.html -e 404.html gs://www.juliyasmith.com
 
-Go to site
+[Go to site](http://www.juliyasmith.com)
