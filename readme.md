@@ -6,11 +6,7 @@ Go into build directory
 
     cd build
 
-Use this link as a tutorial for set-up.
-
-    Init google cloud (if you haven't done so):
-
-gcloud init
+    gcloud init
 
 Set permissions (if you haven't done so):
 
