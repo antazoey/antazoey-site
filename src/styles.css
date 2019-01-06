@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+}
+
+.center {
+  width: 50%;
+  margin: auto;
+}
+
+.nerdFont {
+  color: whitesmoke;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+a {
+  color: whitesmoke;
+  font-family: 'IBM Plex Mono', monospace;
+  text-decoration: none;
+}
+
+a:hover {
+  color: plum;
+}

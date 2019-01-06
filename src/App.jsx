@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
-import HelloWorld from './components/hello-world';
+import Jumbotron from './components/jumbotron';
+import Resume from './components/resume';
 
 class App extends Component {
   constructor(props) {
@@ -9,7 +10,12 @@ class App extends Component {
   }
 
   render() {
-    return <HelloWorld title="Hello from React webpack" />;
+    return (
+      <div>
+        <Jumbotron title="Juliya Smith" />
+        <Resume />
+      </div>
+    );
   }
 }
 
