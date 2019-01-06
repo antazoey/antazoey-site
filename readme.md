@@ -1,6 +1,10 @@
-Portfolio Site
+# Portfolio Site
 
 My portfolio website on Google Cloud Kit.
+
+Go into build directory
+
+    cd build
 
 Use this link as a tutorial for set-up.
 
