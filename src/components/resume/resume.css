@@ -7,10 +7,14 @@
     justify-content: center;
     height: 2.5rem;
     width: 34%;
+    min-width: 7rem;
     background-color: transparent;
     color: whitesmoke;
-    font-size: large;
-    font-size-adjust: initial;
+    font-size: 78%;
     border-radius: 1.24rem;
     margin-bottom: 1.24rem;
+}
+
+.resumeButton:hover {
+    color: plum;
 }
