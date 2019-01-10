@@ -1,3 +1,4 @@
+
 body {
   background-color: black;
 }
@@ -20,4 +21,8 @@ a {
 
 a:hover {
   color: plum;
+}
+
+button {
+  color: black;
 }

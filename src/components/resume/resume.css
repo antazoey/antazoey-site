@@ -1,2 +1,16 @@
 .resume {
 }
+
+.resumeButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 34%;
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: large;
+    font-size-adjust: initial;
+    border-radius: 1.24rem;
+    margin-bottom: 1.24rem;
+}
