@@ -30,10 +30,10 @@ const BarItems = ({
   const blockchainClasses = `${stylize(TopicEnum.BLOCKCHAIN, topic)} ${
     Style.nerdFont
   }`;
-  const item = (handleClick, itemClasses, deliminator) => (
+  const item = (handleClick, itemClasses, value, deliminator) => (
     <span>
       <Button onClick={handleClick} className={itemClasses}>
-        Web
+        {value}
       </Button>
       <span className={numStyle}>{deliminator}</span>
     </span>
@@ -41,9 +41,9 @@ const BarItems = ({
   return (
     <p>
       <span className={numStyle}>00</span>
-      {item(handleWebClick, webClasses, '01')}
-      {item(handleMobileClick, mobileClasses, '10')}
-      {item(handleBlockchainClick, blockchainClasses, '11')}
+      {item(handleWebClick, webClasses, 'Web', '01')}
+      {item(handleMobileClick, mobileClasses, 'Mobile', '10')}
+      {item(handleBlockchainClick, blockchainClasses, 'Blockchain', '11')}
     </p>
   );
 };
