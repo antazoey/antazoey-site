@@ -8,7 +8,7 @@ import Resume from './components/resume';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { selectedTopic: TopicEnum.RESUME };
+    this.state = { ...props, selectedTopic: TopicEnum.RESUME };
   }
 
   getTopic = () => {

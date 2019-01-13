@@ -9,22 +9,8 @@ body {
 }
 
 .nerdFont {
-  color: whitesmoke;
-  font-family: 'IBM Plex Mono', monospace;
-}
-
-a {
-  color: whitesmoke;
-  font-family: 'IBM Plex Mono', monospace;
-  text-decoration: none;
-}
-
-a:hover {
   color: black;
-}
-
-button {
-  color: black;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .juliya-red {

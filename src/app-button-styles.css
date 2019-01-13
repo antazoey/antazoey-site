@@ -1,21 +1,26 @@
 .title-app-button {
-    background-color: black;
-    border: black;
-    color: whitesmoke;
-    font-size: 0.84em;
-    cursor: pointer;
-    outline: 0;
+  background-color: black;
+  border: black;
+  color: whitesmoke;
+  font-size: 0.84em;
+  cursor: pointer;
+  outline: 0;
 }
 
 .app-button {
-    background-color: black;
-    border: black;
-    color: whitesmoke;
-    font-size: 0.84em;
-    cursor: pointer;
-    outline: 0;
+  background-color: black;
+  border: black;
+  color: whitesmoke;
+  font-size: 0.84em;
+  cursor: pointer;
+  outline: 0;
+  text-shadow: -0.015em -0.0125em 0 #990066, 0.0125em -0.0125em 0 #990066,
+    -0.015em 0.0125em 0 #990066, 0.0125em 0.0125em 0 #990066;
 }
 
 .app-button:hover {
-    color: black;
+  color: black;
+  font-size: 0.92em;
+  text-shadow: 0 -0.75em 0 #990066, 0 -0.75em 0 #990066,
+    0 -0.75em 0 #990066, 0 -0.75em 0 #990066;
 }
