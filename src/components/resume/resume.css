@@ -9,15 +9,15 @@
     width: 9rem;
     min-width: 7rem;
     background-color: transparent;
-    color: whitesmoke;
+    color: #66FF99;
     font-size: 78%;
-    border-color: black;
+    border-color: #66FF99;
     border-radius: 0.95rem;
     margin-bottom: 1.24rem;
 }
 
 .resumeButton:hover {
+    border: black;
     color: black;
-    border-bottom-color: black;
-    border-top-color: whitesmoke;
+    cursor: pointer;
 }

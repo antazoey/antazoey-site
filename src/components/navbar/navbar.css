@@ -3,6 +3,14 @@
 }
 
 .navItem {
-  margin-left: 3rem;
-  color: green;
+  background-color: black;
+  border: black;
+  color: whitesmoke;
+  font-size: 0.84em;
+  cursor: pointer;
+  outline: 0;
+}
+
+.navItem:hover {
+  color: black;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import TopicEnum from 'topic-enum';
+import { Button } from 'react-bootstrap';
 import navStyle from './navbar.css';
 import style from '../../styles.css';
 
@@ -10,38 +11,45 @@ const getTopic = selected => Object.keys(TopicEnum)[selected - 1];
 
 const stylize = (topic, selectedTopic) => {
   if (topic === selectedTopic) {
-    return { color: 'black', ...navStyle.navItem };
+    return {};
   }
-  return {};
+  return navStyle.navItem;
 };
 
-const navBar = selected => {
+const BarItems = ({
+  selected,
+  handleWebClick,
+  handleMobileClick,
+  handleBlockchainClick,
+}) => {
   const topic = getTopic(selected);
-  const webStyle = stylize(TopicEnum.WEB, topic);
-  const mobileStyle = stylize(TopicEnum.MOBILE, topic);
-  const blockChainStyle = stylize(TopicEnum.BLOCKCHAIN, topic);
+  const webClasses = `${stylize(TopicEnum.WEB, topic)} ${style.nerdFont}`;
+  const mobileClasses = `${stylize(TopicEnum.MOBILE, topic)} ${style.nerdFont}`;
+  const blockchainClasses = `${stylize(TopicEnum.BLOCKCHAIN, topic)} ${
+    style.nerdFont
+  }`;
   const webItem = () => (
     <span>
       <span className={style['juliya-red']}>00</span>
-      <a href="" style={webStyle}>
+      <Button onClick={handleWebClick} className={webClasses}>
         Web
-      </a>
+      </Button>
       <span className={style['juliya-red']}>01</span>
     </span>
   );
   const mobileItem = () => (
     <span>
-      <a href="" style={mobileStyle}>
+      <Button onClick={handleMobileClick} className={mobileClasses}>
         Mobile
-      </a>
+      </Button>
       <span className={style['juliya-red']}>10</span>
     </span>
   );
   const blockchainItem = () => (
     <span>
-      <a href="" style={blockChainStyle}>
-        Blockchain
-      </a>
+      <Button onClick={handleBlockchainClick} className={blockchainClasses}>
+        Web
+      </Button>
       <span className={style['juliya-red']}>11</span>
     </span>
   );
@@ -57,18 +65,32 @@ const navBar = selected => {
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
-    const { selected } = props;
-    this.state = { selected };
+    const {
+      selected,
+      handleWebClick,
+      handleMobileClick,
+      handleBlockchainClick,
+    } = props;
+    this.state = {
+      selected,
+      handleWebClick,
+      handleMobileClick,
+      handleBlockchainClick,
+    };
   }
 
   render() {
-    const { selected } = this.state;
-    return <div className={classes}>{navBar(selected)}</div>;
+    return <div className={classes}>{BarItems(this.state)}</div>;
   }
 }
 
-NavBar.propTypes = {
+BarItems.propTypes = {
   selected: PropTypes.number,
+  handleWebClick: PropTypes.func,
+  handleMobileClick: PropTypes.func,
+  handleBlockchainClick: PropTypes.func,
 };
+
+NavBar.propTypes = BarItems.propTypes;
 
 export default NavBar;
