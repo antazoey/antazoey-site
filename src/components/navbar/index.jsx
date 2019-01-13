@@ -24,41 +24,26 @@ const BarItems = ({
   handleBlockchainClick,
 }) => {
   const topic = getTopic(selected);
+  const numStyle = Style['juliya-red'];
   const webClasses = `${stylize(TopicEnum.WEB, topic)} ${Style.nerdFont}`;
   const mobileClasses = `${stylize(TopicEnum.MOBILE, topic)} ${Style.nerdFont}`;
   const blockchainClasses = `${stylize(TopicEnum.BLOCKCHAIN, topic)} ${
     Style.nerdFont
   }`;
-  const webItem = () => (
+  const item = (handleClick, itemClasses, deliminator) => (
     <span>
-      <span className={Style['juliya-red']}>00</span>
-      <Button onClick={handleWebClick} className={webClasses}>
+      <Button onClick={handleClick} className={itemClasses}>
         Web
       </Button>
-      <span className={Style['juliya-red']}>01</span>
-    </span>
-  );
-  const mobileItem = () => (
-    <span>
-      <Button onClick={handleMobileClick} className={mobileClasses}>
-        Mobile
-      </Button>
-      <span className={Style['juliya-red']}>10</span>
-    </span>
-  );
-  const blockchainItem = () => (
-    <span>
-      <Button onClick={handleBlockchainClick} className={blockchainClasses}>
-        Web
-      </Button>
-      <span className={Style['juliya-red']}>11</span>
+      <span className={numStyle}>{deliminator}</span>
     </span>
   );
   return (
     <p>
-      {webItem()}
-      {mobileItem()}
-      {blockchainItem()}
+      <span className={numStyle}>00</span>
+      {item(handleWebClick, webClasses, '01')}
+      {item(handleMobileClick, mobileClasses, '10')}
+      {item(handleBlockchainClick, blockchainClasses, '11')}
     </p>
   );
 };
