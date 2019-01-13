@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TopicEnum from 'topic-enum';
 import { Button } from 'react-bootstrap';
-import navStyle from './navbar.css';
-import style from '../../styles.css';
+import NavStyle from './navbar.css';
+import Style from '../../styles.css';
+import ButtonStyle from '../../app-button-styles.css';
 
-const classes = `${navStyle.navBar} ${style.nerdFont}`;
+const classes = `${NavStyle.navBar} ${Style.nerdFont}`;
 
 const getTopic = selected => Object.keys(TopicEnum)[selected - 1];
 
@@ -13,7 +14,7 @@ const stylize = (topic, selectedTopic) => {
   if (topic === selectedTopic) {
     return {};
   }
-  return navStyle.navItem;
+  return ButtonStyle['app-button'];
 };
 
 const BarItems = ({
@@ -23,18 +24,18 @@ const BarItems = ({
   handleBlockchainClick,
 }) => {
   const topic = getTopic(selected);
-  const webClasses = `${stylize(TopicEnum.WEB, topic)} ${style.nerdFont}`;
-  const mobileClasses = `${stylize(TopicEnum.MOBILE, topic)} ${style.nerdFont}`;
+  const webClasses = `${stylize(TopicEnum.WEB, topic)} ${Style.nerdFont}`;
+  const mobileClasses = `${stylize(TopicEnum.MOBILE, topic)} ${Style.nerdFont}`;
   const blockchainClasses = `${stylize(TopicEnum.BLOCKCHAIN, topic)} ${
-    style.nerdFont
+    Style.nerdFont
   }`;
   const webItem = () => (
     <span>
-      <span className={style['juliya-red']}>00</span>
+      <span className={Style['juliya-red']}>00</span>
       <Button onClick={handleWebClick} className={webClasses}>
         Web
       </Button>
-      <span className={style['juliya-red']}>01</span>
+      <span className={Style['juliya-red']}>01</span>
     </span>
   );
   const mobileItem = () => (
@@ -42,7 +43,7 @@ const BarItems = ({
       <Button onClick={handleMobileClick} className={mobileClasses}>
         Mobile
       </Button>
-      <span className={style['juliya-red']}>10</span>
+      <span className={Style['juliya-red']}>10</span>
     </span>
   );
   const blockchainItem = () => (
@@ -50,7 +51,7 @@ const BarItems = ({
       <Button onClick={handleBlockchainClick} className={blockchainClasses}>
         Web
       </Button>
-      <span className={style['juliya-red']}>11</span>
+      <span className={Style['juliya-red']}>11</span>
     </span>
   );
   return (

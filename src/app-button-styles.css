@@ -1,0 +1,21 @@
+.title-app-button {
+    background-color: black;
+    border: black;
+    color: whitesmoke;
+    font-size: 0.84em;
+    cursor: pointer;
+    outline: 0;
+}
+
+.app-button {
+    background-color: black;
+    border: black;
+    color: whitesmoke;
+    font-size: 0.84em;
+    cursor: pointer;
+    outline: 0;
+}
+
+.app-button:hover {
+    color: black;
+}

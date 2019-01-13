@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
 import { Document, Page } from 'react-pdf';
-import style from 'styles.css';
-import resumeStyle from './resume.css';
+import Style from 'styles.css';
+import ResumeStyle from './resume.css';
 
 const resumeButtonClasses = () =>
-  `${resumeStyle.resumeButton} ${style.center} ${
-    style.nerdFont
+  `${ResumeStyle.resumeButton} ${Style.center} ${
+    Style.nerdFont
   } btn-outline-primary`;
 
 const ResumeButton = props => {
@@ -23,7 +23,7 @@ const ResumeButton = props => {
   );
 };
 
-const resumeClasses = () => `${resumeStyle.resume} ${style.center}`;
+const resumeClasses = () => `${ResumeStyle.resume} ${Style.center}`;
 
 const ResumeDocument = () => (
   <Document file="resume.pdf">

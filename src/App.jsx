@@ -17,14 +17,24 @@ class App extends Component {
       case TopicEnum.RESUME:
         return <Resume />;
       default:
-        return <hr />;
+        return <p />;
     }
+  };
+
+  change = topic => {
+    this.setState({ selectedTopic: topic });
   };
 
   render() {
     return (
       <div>
-        <Jumbotron title="Juliya Smith" />
+        <Jumbotron
+          title="Juliya Smith"
+          handleJuliyaClick={() => this.change(TopicEnum.RESUME)}
+          handleWebClick={() => this.change(TopicEnum.WEB)}
+          handleMobileClick={() => this.change(TopicEnum.MOBILE)}
+          handleBlockchainClick={() => this.change(TopicEnum.BLOCKCHAIN)}
+        />
         {this.getTopic()}
       </div>
     );
