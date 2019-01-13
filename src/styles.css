@@ -20,9 +20,13 @@ a {
 }
 
 a:hover {
-  color: plum;
+  color: black;
 }
 
 button {
   color: black;
+}
+
+.juliya-red {
+  color: #661400;
 }

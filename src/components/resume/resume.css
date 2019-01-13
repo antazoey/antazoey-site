@@ -6,15 +6,18 @@
     align-items: center;
     justify-content: center;
     height: 2.5rem;
-    width: 34%;
+    width: 9rem;
     min-width: 7rem;
     background-color: transparent;
     color: whitesmoke;
     font-size: 78%;
-    border-radius: 1.24rem;
+    border-color: black;
+    border-radius: 0.95rem;
     margin-bottom: 1.24rem;
 }
 
 .resumeButton:hover {
-    color: plum;
+    color: black;
+    border-bottom-color: black;
+    border-top-color: whitesmoke;
 }

@@ -6,17 +6,18 @@ import NavBar from '../navbar/index.jsx';
 
 const classes = `${jumboStyle.jumbotron} ${style.nerdFont}`;
 
-const Jumbotron = ({ title }) => (
+const Jumbotron = ({ title, navSelected }) => (
   <div className={classes}>
     <h1 className="text-center">
       <strong>{title}</strong>
     </h1>
-    <NavBar />
+    <NavBar selected={navSelected} />
   </div>
 );
 
 Jumbotron.propTypes = {
   title: PropTypes.string,
+  navSelected: PropTypes.number,
 };
 
 export default Jumbotron;

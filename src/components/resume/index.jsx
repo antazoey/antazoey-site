@@ -6,7 +6,9 @@ import style from 'styles.css';
 import resumeStyle from './resume.css';
 
 const resumeButtonClasses = () =>
-  `${resumeStyle.resumeButton} ${style.center} btn-outline-primary`;
+  `${resumeStyle.resumeButton} ${style.center} ${
+    style.nerdFont
+  } btn-outline-primary`;
 
 const ResumeButton = props => {
   const { handleClick, value } = props;
