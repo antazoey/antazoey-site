@@ -4,6 +4,7 @@ import { hot } from 'react-hot-loader';
 import TopicEnum from 'topic-enum';
 import Jumbotron from './components/jumbotron';
 import Resume from './components/resume';
+import PatchDay from './components/patchday';
 
 class App extends Component {
   constructor(props) {
@@ -16,6 +17,8 @@ class App extends Component {
     switch (selectedTopic) {
       case TopicEnum.RESUME:
         return <Resume />;
+      case TopicEnum.MOBILE:
+        return <PatchDay />;
       default:
         return <p />;
     }

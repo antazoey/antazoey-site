@@ -14,10 +14,11 @@
     border-color: #66FF99;
     border-radius: 0.95rem;
     margin-bottom: 1.24rem;
+    outline: 0;
 }
 
 .resumeButton:hover {
-    border: black;
-    color: black;
+    border-color: #990066;
+    color: #990066;
     cursor: pointer;
 }
