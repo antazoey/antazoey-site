@@ -1,10 +1,44 @@
+.patchDay {
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.pdButton {
+    display: block;
+    margin: auto;
+    border-radius: 2em;
+    width: 32%;
+    height: 32%;
+    background-color: transparent;
+    border-color: transparent;
+    border-width: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
 .pdImage {
-    border-width: 1em;
-    border-color: black;
-    align-items: center;
-    justify-content: center;
-    width: 10rem;
-    height: 10rem;
-    background-color: white;
-    border-radius: 10rem;
+    display: block;
+    margin: auto;
+    width: 75%;
+    height: 75%;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: .5s ease;
+    outline: 0;
+}
+
+.pdText {
+    display: block;
+    margin-top: 1em;
+    font-size: 1.125em;
+    margin-bottom: 7rem;
+    color: whitesmoke;
+    position: absolute;
+    text-align: center;
+    opacity: 1;
+}
+
+.pdButton:hover .pdImage {
+    opacity: 0.5;
 }
