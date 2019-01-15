@@ -8,6 +8,10 @@ body {
   margin: auto;
 }
 
+.hide {
+  opacity: 0;
+}
+
 .nerdFont {
   color: black;
   font-family: 'IBM Plex Mono', monospace;

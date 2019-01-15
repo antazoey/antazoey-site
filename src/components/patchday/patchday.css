@@ -36,7 +36,7 @@
     color: whitesmoke;
     position: absolute;
     text-align: center;
-    opacity: 1;
+    transition: .5s ease;
 }
 
 .pdButton:hover .pdImage {

@@ -22,15 +22,20 @@ const PDButton = props => {
   );
 };
 
-const PDText = () => (
-  <div className={PDStyle.pdText}>
-    <p>
-      PatchDay is scheduling software designed for hormone replacement therapy
-      (HRT). Originally, we sought to mitigate problems with patch staggering
-      but later evolved into making an all-encompassing H.R.T. companion.
-    </p>
-  </div>
-);
+const PDText = textVisible => {
+  const classes = textVisible
+    ? `${PDStyle.pdText}`
+    : `${PDStyle.pdText} ${Style.hide}`;
+  return (
+    <div className={classes}>
+      <p>
+        PatchDay is scheduling software designed for hormone replacement therapy
+        (HRT). Originally, we sought to mitigate problems with patch staggering
+        but later evolved into making an all-encompassing H.R.T. companion.
+      </p>
+    </div>
+  );
+};
 
 class PatchDay extends React.Component {
   constructor(props) {
@@ -55,11 +60,10 @@ class PatchDay extends React.Component {
       handleHover: this.handleHover,
       handleExitHover: this.handleExitHover,
     };
-    const pdText = textVisible ? PDText() : <br />;
     return (
       <div className={pdClasses()}>
         {PDButton(buttonProps)}
-        {pdText}
+        {PDText(textVisible)}
       </div>
     );
   }
