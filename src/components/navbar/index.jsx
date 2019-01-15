@@ -25,11 +25,15 @@ const BarItems = ({
 }) => {
   const topic = getTopic(selected);
   const numStyle = Style['juliya-red'];
-  const webClasses = `${stylize(TopicEnum.WEB, topic)} ${Style.nerdFont}`;
-  const mobileClasses = `${stylize(TopicEnum.MOBILE, topic)} ${Style.nerdFont}`;
+  const webClasses = `${stylize(TopicEnum.WEB, topic)} ${Style.nerdFont} ${
+    NavStyle.navItem
+  }`;
+  const mobileClasses = `${stylize(TopicEnum.MOBILE, topic)} ${
+    Style.nerdFont
+  } ${NavStyle.navItem}`;
   const blockchainClasses = `${stylize(TopicEnum.BLOCKCHAIN, topic)} ${
     Style.nerdFont
-  }`;
+  } ${NavStyle.navItem}`;
   const item = (handleClick, itemClasses, value, deliminator) => (
     <span>
       <Button onClick={handleClick} className={itemClasses}>

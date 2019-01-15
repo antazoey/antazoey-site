@@ -8,6 +8,7 @@
     height: 2.5rem;
     width: 9rem;
     min-width: 7rem;
+    transition: 0.3s ease;
     background-color: transparent;
     color: #66FF99;
     font-size: 78%;
