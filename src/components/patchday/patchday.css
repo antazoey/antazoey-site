@@ -8,8 +8,8 @@
     display: block;
     margin: auto;
     border-radius: 2em;
-    width: 32%;
-    height: 32%;
+    width: 128px;
+    height: 128px;
     background-color: transparent;
     border-color: transparent;
     border-width: 0;
@@ -20,8 +20,8 @@
 .pdImage {
     display: block;
     margin: auto;
-    width: 75%;
-    height: 75%;
+    width: 128px;
+    height: 128px;
     border-radius: 2rem;
     cursor: pointer;
     transition: .5s ease;
