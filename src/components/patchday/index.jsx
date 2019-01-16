@@ -4,6 +4,7 @@ import { Button } from 'react-bootstrap';
 import pdLogo from '../../resources/pdlogo.png';
 import PDStyle from './patchday.css';
 import Style from '../../styles.css';
+import detectMobile from '../../mobile-detect';
 
 const pdClasses = () => `${Style.center} ${PDStyle.patchDay}`;
 const pdButtonClasses = () => `${PDStyle.pdButton}`;
@@ -26,7 +27,8 @@ const PDButton = props => {
 };
 
 const PDText = textVisible => {
-  const classes = textVisible
+  const hideText = textVisible || detectMobile();
+  const classes = hideText
     ? `${PDStyle.pdText}`
     : `${PDStyle.pdText} ${Style.hide}`;
   return (

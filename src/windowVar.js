@@ -1,1 +1,1 @@
-const windowVar = window || {};
+export const windowVar = window || {};
