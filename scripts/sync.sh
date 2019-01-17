@@ -1,9 +1,15 @@
 #!/bin/bash
 
-if cd ../build
+if cd ..
+then
+npx webpack
+else
+    echo "Failure to cd for webpack."
+fi
+if cd build
 then
     gsutil rsync -R . gs://www.juliyasmith.com
 else
-    echo "Failure to cd"
+    echo "Failure to cd for gsutil rsync."
 fi
 echo "Synchronization complete."
