@@ -1,13 +1,11 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import PDSiteStyle from './pdsite.css';
-import ButtonStyle from '../../app-button-styles.css';
 import Style from '../../styles.css';
 
 const pdSiteClasses = () => `${PDSiteStyle.PDSite}`;
 const frameClasses = () => `${PDSiteStyle.Frame}`;
-const buttonClasses = () =>
-  `${ButtonStyle['app-button-no-effect']} ${PDSiteStyle.SiteButton}`;
+const buttonClasses = () => `${PDSiteStyle.SiteButton}`;
 const messageClasses = () => `${PDSiteStyle.Message} ${Style.center}`;
 const pClasses = () => `${Style.pdText} ${PDSiteStyle.Para}`;
 

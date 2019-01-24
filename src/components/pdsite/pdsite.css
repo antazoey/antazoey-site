@@ -17,10 +17,16 @@
 
 .SiteButton {
     font-size: 5em;
+    font-family: 'Caveat', cursive;
+    cursor: pointer;
+    outline: 0;
+    background: transparent;
+    color: whitesmoke;
+    border: 0;
 }
 
 .SiteButton:hover {
-    color: transparent;
+    color: plum;
 }
 
 .Para {
