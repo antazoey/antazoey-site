@@ -10,7 +10,7 @@ const SoundScape = () => (
       className={playerClasses()}
       title="SoundScape Audio Visualizer"
       src="https://www.youtube.com/embed/ndX4ULw5S74"
-      frameBorder="1em"
+      frameBorder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
     />
