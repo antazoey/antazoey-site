@@ -5,6 +5,7 @@ import TopicEnum from 'topic-enum';
 import Jumbotron from './components/jumbotron';
 import Resume from './components/resume';
 import PatchDay from './components/patchday';
+import Art from './components/art';
 
 class App extends Component {
   constructor(props) {
@@ -19,6 +20,8 @@ class App extends Component {
         return <Resume />;
       case TopicEnum.MOBILE:
         return <PatchDay />;
+      case TopicEnum.ART:
+        return <Art />;
       default:
         return <p />;
     }
@@ -36,7 +39,7 @@ class App extends Component {
           handleJuliyaClick={() => this.change(TopicEnum.RESUME)}
           handleWebClick={() => this.change(TopicEnum.WEB)}
           handleMobileClick={() => this.change(TopicEnum.MOBILE)}
-          handleBlockchainClick={() => this.change(TopicEnum.BLOCKCHAIN)}
+          handleArtClick={() => this.change(TopicEnum.ART)}
         />
         {this.getTopic()}
       </div>

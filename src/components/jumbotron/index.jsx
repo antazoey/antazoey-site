@@ -16,7 +16,7 @@ const Jumbotron = ({
   handleJuliyaClick,
   handleWebClick,
   handleMobileClick,
-  handleBlockchainClick,
+  handleArtClick,
 }) => (
   <div className={jumboClasses}>
     <h1 className="text-center">
@@ -28,7 +28,7 @@ const Jumbotron = ({
       selected={navSelected}
       handleWebClick={handleWebClick}
       handleMobileClick={handleMobileClick}
-      handleBlockchainClick={handleBlockchainClick}
+      handleArtClick={handleArtClick}
     />
   </div>
 );
@@ -39,7 +39,7 @@ Jumbotron.propTypes = {
   handleJuliyaClick: PropTypes.func,
   handleWebClick: PropTypes.func,
   handleMobileClick: PropTypes.func,
-  handleBlockchainClick: PropTypes.func,
+  handleArtClick: PropTypes.func,
 };
 
 export default Jumbotron;

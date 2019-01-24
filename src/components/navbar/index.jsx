@@ -21,7 +21,7 @@ const BarItems = ({
   selected,
   handleWebClick,
   handleMobileClick,
-  handleBlockchainClick,
+  handleArtClick,
 }) => {
   const topic = getTopic(selected);
   const numStyle = Style['juliya-red'];
@@ -31,9 +31,9 @@ const BarItems = ({
   const mobileClasses = `${stylize(TopicEnum.MOBILE, topic)} ${
     Style.nerdFont
   } ${NavStyle.navItem}`;
-  const blockchainClasses = `${stylize(TopicEnum.BLOCKCHAIN, topic)} ${
-    Style.nerdFont
-  } ${NavStyle.navItem}`;
+  const artClasses = `${stylize(TopicEnum.ART, topic)} ${Style.nerdFont} ${
+    NavStyle.navItem
+  }`;
   const item = (handleClick, itemClasses, value, deliminator) => (
     <span>
       <Button onClick={handleClick} className={itemClasses}>
@@ -47,7 +47,7 @@ const BarItems = ({
       <span className={numStyle}>00</span>
       {item(handleWebClick, webClasses, 'Web', '01')}
       {item(handleMobileClick, mobileClasses, 'Mobile', '10')}
-      {item(handleBlockchainClick, blockchainClasses, 'Blockchain', '11')}
+      {item(handleArtClick, artClasses, 'Art', '11')}
     </p>
   );
 };
@@ -59,13 +59,13 @@ class NavBar extends React.Component {
       selected,
       handleWebClick,
       handleMobileClick,
-      handleBlockchainClick,
+      handleArtClick,
     } = props;
     this.state = {
       selected,
       handleWebClick,
       handleMobileClick,
-      handleBlockchainClick,
+      handleArtClick,
     };
   }
 
@@ -78,7 +78,7 @@ BarItems.propTypes = {
   selected: PropTypes.number,
   handleWebClick: PropTypes.func,
   handleMobileClick: PropTypes.func,
-  handleBlockchainClick: PropTypes.func,
+  handleArtClick: PropTypes.func,
 };
 
 NavBar.propTypes = BarItems.propTypes;
