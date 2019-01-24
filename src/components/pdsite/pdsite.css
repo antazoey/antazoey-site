@@ -1,0 +1,28 @@
+.PDSite {
+    text-align: center;
+    width:100%;
+}
+
+.Frame {
+    width: 75%;
+    height: 30rem;
+}
+
+.Message {
+    top: 1rem;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.SiteButton {
+    font-size: 5em;
+}
+
+.SiteButton:hover {
+    color: transparent;
+}
+
+.Para {
+    width: 100%;
+}

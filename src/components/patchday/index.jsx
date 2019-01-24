@@ -29,8 +29,8 @@ const PDButton = props => {
 const PDText = textVisible => {
   const hideText = textVisible || detectMobile();
   const classes = hideText
-    ? `${PDStyle.pdText}`
-    : `${PDStyle.pdText} ${Style.hide}`;
+    ? `${Style.pdText}`
+    : `${Style.pdText} ${Style.hide}`;
   return (
     <div className={classes}>
       <p>

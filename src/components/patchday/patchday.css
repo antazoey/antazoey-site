@@ -28,17 +28,6 @@
     outline: 0;
 }
 
-.pdText {
-    display: block;
-    margin-top: 1em;
-    font-size: 1.125em;
-    margin-bottom: 7rem;
-    color: whitesmoke;
-    position: absolute;
-    text-align: center;
-    transition: .5s ease;
-}
-
 .pdButton:hover .pdImage {
     opacity: 0.5;
 }

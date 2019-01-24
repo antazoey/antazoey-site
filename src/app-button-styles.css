@@ -24,3 +24,12 @@
   text-shadow: 0 -0.25em 0 #66FF99, 0 -0.25em 0 #66FF99,
     0 -0.25em 0 #66FF99, 0 -0.25em 0 #66FF99;
 }
+
+.app-button-no-effect {
+  background-color: black;
+  border: black;
+  color: whitesmoke;
+  font-size: 0.84em;
+  cursor: pointer;
+  outline: 0;
+}
