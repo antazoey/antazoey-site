@@ -18,7 +18,7 @@ const PDButton = props => {
       onMouseEnter={handleHover}
       onMouseLeave={handleExitHover}
       onClick={() => {
-        window.location.href = 'http://www.patchdayhrt.com';
+        window.location.href = 'https://github.com/unparalleled-js/PatchDay';
       }}
     >
       <img src={pdLogo} alt="PatchDay App Logo" className={pdImageClasses()} />
