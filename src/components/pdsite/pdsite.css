@@ -1,6 +1,9 @@
 .PDSite {
     text-align: center;
     width:100%;
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .Frame {

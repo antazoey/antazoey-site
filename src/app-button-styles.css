@@ -4,6 +4,7 @@
   color: white;
   font-family: 'Caveat', cursive;
   font-size: 1em;
+  text-decoration: none;
   cursor: pointer;
   outline: 0;
 }
@@ -15,8 +16,7 @@
   font-size: 0.84em;
   cursor: pointer;
   outline: 0;
-  text-shadow: -0.015em -0.0125em 0 #990066, 0.0125em -0.0125em 0 #990066,
-    -0.015em 0.0125em 0 #990066, 0.0125em 0.0125em 0 #990066;
+  text-decoration: none;
 }
 
 .app-button:hover {

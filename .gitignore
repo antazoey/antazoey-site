@@ -4,6 +4,8 @@
 .#*
 .DS_Store
 
+build/
+
 # Test
 coverage
 .eslintcache

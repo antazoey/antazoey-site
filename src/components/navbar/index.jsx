@@ -1,86 +1,34 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import TopicEnum from 'topic-enum';
-import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import NavStyle from './navbar.css';
 import Style from '../../styles.css';
 import ButtonStyle from '../../app-button-styles.css';
 
 const classes = `${NavStyle.navBar} ${Style.nerdFont}`;
+const linkClass = `${ButtonStyle['app-button']} ${Style.nerdFont} ${
+  NavStyle.navItem
+}`;
 
-const getTopic = selected => Object.keys(TopicEnum)[selected - 1];
-
-const stylize = (topic, selectedTopic) => {
-  if (topic === selectedTopic) {
-    return {};
-  }
-  return ButtonStyle['app-button'];
-};
-
-const BarItems = ({
-  selected,
-  handleWebClick,
-  handleMobileClick,
-  handleArtClick,
-}) => {
-  const topic = getTopic(selected);
+const BarItems = () => {
   const numStyle = Style['juliya-red'];
-  const webClasses = `${stylize(TopicEnum.WEB, topic)} ${Style.nerdFont} ${
-    NavStyle.navItem
-  }`;
-  const mobileClasses = `${stylize(TopicEnum.MOBILE, topic)} ${
-    Style.nerdFont
-  } ${NavStyle.navItem}`;
-  const artClasses = `${stylize(TopicEnum.ART, topic)} ${Style.nerdFont} ${
-    NavStyle.navItem
-  }`;
-  const item = (handleClick, itemClasses, value, deliminator) => (
+  const item = (itemClasses, value, deliminator) => (
     <span>
-      <Button onClick={handleClick} className={itemClasses}>
+      <Link to={`/${value.toLowerCase()}`} className={itemClasses}>
         {value}
-      </Button>
+      </Link>
       <span className={numStyle}>{deliminator}</span>
     </span>
   );
   return (
     <p>
       <span className={numStyle}>00</span>
-      {item(handleWebClick, webClasses, 'Web', '01')}
-      {item(handleMobileClick, mobileClasses, 'Mobile', '10')}
-      {item(handleArtClick, artClasses, 'Art', '11')}
+      {item(linkClass, 'About', '01')}
+      {item(linkClass, 'Code', '10')}
+      {item(linkClass, 'Art', '11')}
     </p>
   );
 };
 
-class NavBar extends React.Component {
-  constructor(props) {
-    super(props);
-    const {
-      selected,
-      handleWebClick,
-      handleMobileClick,
-      handleArtClick,
-    } = props;
-    this.state = {
-      selected,
-      handleWebClick,
-      handleMobileClick,
-      handleArtClick,
-    };
-  }
-
-  render() {
-    return <div className={classes}>{BarItems(this.state)}</div>;
-  }
-}
-
-BarItems.propTypes = {
-  selected: PropTypes.number,
-  handleWebClick: PropTypes.func,
-  handleMobileClick: PropTypes.func,
-  handleArtClick: PropTypes.func,
-};
-
-NavBar.propTypes = BarItems.propTypes;
+const NavBar = () => <div className={classes}>{BarItems()}</div>;
 
 export default NavBar;

@@ -28,9 +28,6 @@ const SoundScape = () => (
         >
           Go
         </Button>
-        <p className={pClasses()}>
-          The PatchDay Support Site is not as cool as JuliyaSmith.com yet.
-        </p>
       </div>
     </div>
   </div>
