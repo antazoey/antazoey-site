@@ -1,13 +1,12 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import PDSiteStyle from './pdsite.css';
+import PDSiteStyle from './about.css';
 import Style from '../../styles.css';
 
 const pdSiteClasses = () => `${PDSiteStyle.PDSite}`;
 const frameClasses = () => `${PDSiteStyle.Frame}`;
 const buttonClasses = () => `${PDSiteStyle.SiteButton}`;
 const messageClasses = () => `${PDSiteStyle.Message} ${Style.center}`;
-const pClasses = () => `${Style.pdText} ${PDSiteStyle.Para}`;
 
 const SoundScape = () => (
   <div>

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
 import pdLogo from '../../resources/pdlogo.png';
-import PDStyle from './patchday.css';
+import PDStyle from './code.css';
 import Style from '../../styles.css';
 import detectMobile from '../../mobile-detect';
 
