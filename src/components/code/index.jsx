@@ -29,14 +29,18 @@ const PDButton = props => {
 const PDText = textVisible => {
   const hideText = textVisible || detectMobile();
   const classes = hideText
-    ? `${Style.pdText}`
-    : `${Style.pdText} ${Style.hide}`;
+    ? `${Style.SharedText}`
+    : `${Style.SharedText} ${Style.hide}`;
   return (
     <div className={classes}>
       <p>
-        PatchDay is scheduling software designed for hormone replacement therapy
-        (HRT). Originally, we sought to mitigate problems with patch staggering
-        but later evolved into making an all-encompassing H.R.T. companion.
+        <h1 id="patchday">PatchDay</h1>
+        <p>
+          An iOS app for managing HRT medication. The primary use-case is the
+          &quot;patch staggering&quot; technique for transdermal patches.
+          PatchDay also supports Pills, Injection-based HRT, and Gel-based HRT.
+          To learn more about how to set up the app, visit the support site.
+        </p>
       </p>
     </div>
   );

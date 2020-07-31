@@ -24,13 +24,13 @@ body {
   color: #66FF99;
 }
 
-.pdText {
+.SharedText {
+  max-width: 1000px;
+  margin: auto;
   display: block;
-  margin-top: 1em;
+  text-align: justify-all;
   font-size: 1.125em;
-  margin-bottom: 7rem;
   color: whitesmoke;
-  position: absolute;
-  text-align: center;
   transition: .5s ease;
+  font-family: 'IBM Plex Mono', monospace;
 }

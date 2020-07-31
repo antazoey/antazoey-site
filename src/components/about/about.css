@@ -1,11 +1,4 @@
 .About {
     color: whitesmoke;
-}
-
-.SharedText {
-    text-align: justify-all;
-    width:50%;
-    max-width: 1000px;
-    margin: auto;
-    font-size: 20px;
+    width: 50%
 }
