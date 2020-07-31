@@ -1,37 +1,11 @@
-.PDSite {
-    text-align: center;
-    width:100%;
-    background-color: white;
+.About {
+    color: whitesmoke;
+}
+
+.SharedText {
+    text-align: justify-all;
+    width:50%;
     max-width: 1000px;
     margin: auto;
-}
-
-.Frame {
-    width: 75%;
-    height: 30rem;
-}
-
-.Message {
-    top: 1rem;
-    position: relative;
-    display: block;
-    margin: auto;
-}
-
-.SiteButton {
-    font-size: 5em;
-    font-family: 'Caveat', cursive;
-    cursor: pointer;
-    outline: 0;
-    background: transparent;
-    color: whitesmoke;
-    border: 0;
-}
-
-.SiteButton:hover {
-    color: plum;
-}
-
-.Para {
-    width: 100%;
+    font-size: 20px;
 }

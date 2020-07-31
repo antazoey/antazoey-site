@@ -1,35 +1,19 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
-import PDSiteStyle from './about.css';
-import Style from '../../styles.css';
+import AboutStyles from './about.css';
+import Styles from '../../styles.css';
+import Resume from '../resume';
 
-const pdSiteClasses = () => `${PDSiteStyle.PDSite}`;
-const frameClasses = () => `${PDSiteStyle.Frame}`;
-const buttonClasses = () => `${PDSiteStyle.SiteButton}`;
-const messageClasses = () => `${PDSiteStyle.Message} ${Style.center}`;
+const styleClasses = () =>
+  `${AboutStyles.About} ${AboutStyles.SharedText} ${Styles.nerdFont}`;
 
-const SoundScape = () => (
+const AboutJules = () => (
   <div>
-    <div className={pdSiteClasses()}>
-      <iframe
-        className={frameClasses()}
-        title="PatchDay HRT Support Site"
-        src="http://www.patchdayhrt.com"
-        frameBorder="0"
-        allowFullScreen
-      />
-      <div className={messageClasses()}>
-        <Button
-          className={buttonClasses()}
-          onClick={() => {
-            window.location.href = 'http://www.patchdayhrt.com';
-          }}
-        >
-          Go
-        </Button>
-      </div>
+    <Resume />
+    <br />
+    <div className={styleClasses()}>
+      Jules is a software engineer and an &#647;s&#7433;&#647;&#633;&#592;.
     </div>
   </div>
 );
 
-export default SoundScape;
+export default AboutJules;

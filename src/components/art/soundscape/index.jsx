@@ -1,6 +1,5 @@
 import React from 'react';
 import SoundScapeStyle from './soundscape.css';
-import YingthiStyle from '../yingthi/yingthi.css';
 import Style from '../../../styles.css';
 
 const soundScapeClasses = () => `${SoundScapeStyle.SoundScape}`;
