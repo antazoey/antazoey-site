@@ -34,3 +34,7 @@ body {
   transition: .5s ease;
   font-family: 'IBM Plex Mono', monospace;
 }
+
+a {
+  color: #66FF99;
+}

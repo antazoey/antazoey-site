@@ -11,12 +11,11 @@ const pdButtonClasses = () => `${CodeStyles.pdButton}`;
 const pdImageClasses = () => `${CodeStyles.pdImage}`;
 
 const PDButton = props => {
-  const { handleHover, handleExitHover } = props;
+  const { handleHover } = props;
   return (
     <Button
       className={pdButtonClasses()}
       onMouseEnter={handleHover}
-      onMouseLeave={handleExitHover}
       onClick={() => {
         window.location.href = 'https://github.com/unparalleled-js/PatchDay';
       }}
@@ -33,14 +32,13 @@ const PDText = textVisible => {
     : `${Style.SharedText} ${Style.hide}`;
   return (
     <div className={classes}>
+      <h1 id="patchday">PatchDay</h1>
       <p>
-        <h1 id="patchday">PatchDay</h1>
-        <p>
-          An iOS app for managing HRT medication. The primary use-case is the
-          &quot;patch staggering&quot; technique for transdermal patches.
-          PatchDay also supports Pills, Injection-based HRT, and Gel-based HRT.
-          To learn more about how to set up the app, visit the support site.
-        </p>
+        An iOS app for managing HRT medication. The primary use-case is the
+        &quot;patch staggering&quot; technique for transdermal patches. PatchDay
+        also supports Pills, Injection-based HRT, and Gel-based HRT. To learn
+        more about how to set up the app, visit{' '}
+        <a href="https://patchdayhrt.com/#/">https://patchdayhrt.com.</a>
       </p>
     </div>
   );
@@ -51,7 +49,6 @@ class PatchDay extends React.Component {
     super(props);
     const { textVisible } = props;
     this.handleHover = this.handleHover.bind(this);
-    this.handleExitHover = this.handleExitHover.bind(this);
     this.state = { ...props, textVisible: !!textVisible };
   }
 
@@ -59,15 +56,10 @@ class PatchDay extends React.Component {
     this.setState({ textVisible: true });
   }
 
-  handleExitHover() {
-    this.setState({ textVisible: false });
-  }
-
   render() {
     const { textVisible } = this.state;
     const buttonProps = {
       handleHover: this.handleHover,
-      handleExitHover: this.handleExitHover,
     };
     return (
       <div className={pdClasses()}>
@@ -80,7 +72,6 @@ class PatchDay extends React.Component {
 
 PDButton.propTypes = {
   handleHover: PropTypes.func,
-  handleExitHover: PropTypes.func,
 };
 
 PatchDay.propTypes = {
