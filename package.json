@@ -7,7 +7,7 @@
     "start": "NODE_ENV=development webpack-dev-server --open",
     "build": "NODE_ENV=production webpack",
     "format": "prettier --write 'packages/**/*.js'",
-    "deploy": "npm run build && cd dist/ && mv * "
+    "deploy": "./deploy.sh"
   },
   "repository": {
     "type": "git",
