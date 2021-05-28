@@ -10,7 +10,7 @@ const AboutJules = () => (
     <Resume />
     <br />
     <div className={styleClasses()}>
-      Jules creates software and &#647;&#633;&#592;.
+      Jules creates ~/software and &#647;&#633;&#592;.
     </div>
   </div>
 );
