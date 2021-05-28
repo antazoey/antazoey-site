@@ -10,13 +10,24 @@ npm start
 
 ## Deployment
 
-Run
+### One-time setup
+
+First, make sure you have host repo cloned somewhere locally:
 
 ```bash
-npm run build
+git clone https://github.com/unparalleled-js/unparalleled-js.github.io
 ```
 
-To create the production code. Then, move it to your local clone of 
-https://github.com/unparalleled-js/unparalleled-js.github.io
+Then, add the environment variable to your `*.profile`:
 
+```bash
+export PORTFOLIO_SITE_PATH=/path/to/local/repo
+```
 
+### Updating the site
+
+To deploy changes to the site, run:
+
+```bash
+npm run deploy
+```

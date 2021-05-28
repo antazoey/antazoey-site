@@ -6,7 +6,7 @@
 # ./deploy.sh or `npm run deploy`.
 #
 
-set -euo pipefail
+#set -eu pipefail
 
 
 main() {
@@ -15,10 +15,8 @@ main() {
 
   npm run build
 
-  while '( -f ! /build)'; do
-    sleep 10
-    echo "Waiting for /build to exist"
-  done
+  echo "Waiting for /build to exist..."
+  sleep 10
 
   mv build/* $deploy_dir
   cd $deploy_dir
