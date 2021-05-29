@@ -1,16 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Button } from 'react-bootstrap';
-import { Document, Page } from 'react-pdf';
-import Style from 'styles.css';
-import ResumeStyle from './resume.css';
+import React from "react";
+import PropTypes from "prop-types";
+import { Button } from "react-bootstrap";
+import { Document, Page } from "react-pdf";
+import Style from "../../styles";
+import ResumeStyle from "./resume.css";
 
 const resumeButtonClasses = () =>
   `${ResumeStyle.resumeButton} ${Style.center} ${
     Style.nerdFont
   } btn-outline-primary`;
 
-const ResumeButton = props => {
+const ResumeButton = (props) => {
   const { handleClick, value } = props;
   return (
     <Button
@@ -56,13 +56,13 @@ class Resume extends React.Component {
       resumeDocument = <ResumeDocument />;
       buttonProps = {
         handleClick: this.handleHideResumeClick,
-        value: 'Hide Resume',
+        value: "Hide Resume",
       };
     } else {
       resumeDocument = <hr />;
       buttonProps = {
         handleClick: this.handleViewResumeClick,
-        value: 'View Resume',
+        value: "View Resume",
       };
     }
 

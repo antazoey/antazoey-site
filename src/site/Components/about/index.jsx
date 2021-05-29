@@ -1,7 +1,7 @@
-import React from 'react';
-import AboutStyles from './about.css';
-import Styles from '../../styles.css';
-import Resume from '../resume';
+import React from "react";
+import AboutStyles from "./about.css";
+import Styles from "../../styles.css";
+import Resume from "../resume";
 
 const styleClasses = () => `${AboutStyles.About} ${Styles.SharedText}`;
 

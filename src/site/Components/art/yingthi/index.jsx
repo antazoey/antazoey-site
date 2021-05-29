@@ -1,7 +1,7 @@
-import React from 'react';
-import YingthiImage from '../../../images/yingthi.jpg';
-import YingthiStyle from './yingthi.css';
-import Style from '../../../styles.css';
+import React from "react";
+import YingthiImage from "../../../Images/yingthi.jpg";
+import YingthiStyle from "./yingthi.css";
+import Style from "../../../styles.css";
 
 const titleClasses = `${YingthiStyle.Title} ${Style.nerdFont}`;
 

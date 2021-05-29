@@ -1,14 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import JumboStyle from './jumbotron.css';
-import AppButtonStyle from '../../app-button-styles.css';
-import Style from '../../styles.css';
-import NavBar from '../navbar/index.jsx';
+import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+import JumboStyle from "./jumbotron.css";
+import AppButtonStyle from "../../app-button-styles.css";
+import Style from "../../styles.css";
+import NavBar from "../navbar";
 
 const jumboClasses = () => `${JumboStyle.jumbotron} ${Style.nerdFont}`;
 const titleClasses = () =>
-  `${JumboStyle.title} ${AppButtonStyle['title-app-button']}`;
+  `${JumboStyle.title} ${AppButtonStyle["title-app-button"]}`;
 
 const Jumbotron = ({ title }) => (
   <div className={jumboClasses()}>

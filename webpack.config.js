@@ -2,17 +2,17 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.jsx",
+  entry: "./src/site/index.jsx",
   output: {
     path: path.join(__dirname, "/dist"),
-    filename: "index-bundle.js"
+    filename: "index-bundle.js",
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ["babel-loader"]
+        use: ["babel-loader"],
       },
       {
         test: /\.css$/,
@@ -22,14 +22,14 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              outputPath: 'images',
+              outputPath: "images",
             },
           },
         ],
       },
-    ]
+    ],
   },
   resolve: {
     modules: [
@@ -38,14 +38,14 @@ module.exports = {
     ],
     extensions: [".js", ".json", ".jsx", ".css"],
     alias: {
-      Components: path.resolve(__dirname, 'src/components/'),
-      Styles: path.resolve(__dirname, 'src/styles/'),
-      Images: path.resolve(__dirname, 'src/images/')
+      Components: path.resolve(__dirname, "src/site/Components/"),
+      Styles: path.resolve(__dirname, "src/site/Styles/"),
+      Images: path.resolve(__dirname, "src/site/Images/"),
     },
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html"
+      template: "./src/index.html",
     })
-  ]
+  ],
 };

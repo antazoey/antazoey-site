@@ -1,23 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Button } from 'react-bootstrap';
-import pdLogo from '../../resources/pdlogo.png';
-import CodeStyles from './code.css';
-import Style from '../../styles.css';
-import detectMobile from '../../mobile-detect';
+import React from "react";
+import PropTypes from "prop-types";
+import { Button } from "react-bootstrap";
+import pdLogo from "../../Resources/pdlogo.png";
+import CodeStyles from "./code.css";
+import Style from "../../styles.css";
+import detectMobile from "../../mobile-detect";
 
 const pdClasses = () => `${Style.center} ${CodeStyles.patchDay}`;
 const pdButtonClasses = () => `${CodeStyles.pdButton}`;
 const pdImageClasses = () => `${CodeStyles.pdImage}`;
 
-const PDButton = props => {
+const PDButton = (props) => {
   const { handleHover } = props;
   return (
     <Button
       className={pdButtonClasses()}
       onMouseEnter={handleHover}
       onClick={() => {
-        window.location.href = 'https://github.com/unparalleled-js/PatchDay';
+        window.location.href = "https://github.com/unparalleled-js/PatchDay";
       }}
     >
       <img src={pdLogo} alt="PatchDay App Logo" className={pdImageClasses()} />
@@ -25,7 +25,7 @@ const PDButton = props => {
   );
 };
 
-const PDText = textVisible => {
+const PDText = (textVisible) => {
   const hideText = textVisible || detectMobile();
   const classes = hideText
     ? `${Style.SharedText}`
@@ -37,7 +37,7 @@ const PDText = textVisible => {
         An iOS app for managing HRT medication. The primary use-case is the
         &quot;patch staggering&quot; technique for transdermal patches. PatchDay
         also supports Pills, Injection-based HRT, and Gel-based HRT. To learn
-        more about how to set up the app, visit{' '}
+        more about how to set up the app, visit{" "}
         <a href="https://patchdayhrt.com/#/">https://patchdayhrt.com.</a>
       </p>
     </div>
