@@ -1,16 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Button } from "react-bootstrap";
-import { Document, Page } from "react-pdf";
-import Style from "../../styles";
-import ResumeStyle from "./resume.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Button } from 'react-bootstrap';
+import { Document, Page } from 'react-pdf';
 
-const resumeButtonClasses = () =>
-  `${ResumeStyle.resumeButton} ${Style.center} ${
-    Style.nerdFont
-  } btn-outline-primary`;
+const resumeButtonClasses = 'ResumeButton center NerdFont btn-outline-primary';
 
-const ResumeButton = (props) => {
+const ResumeButton = props => {
   const { handleClick, value } = props;
   return (
     <Button
@@ -22,8 +17,6 @@ const ResumeButton = (props) => {
     </Button>
   );
 };
-
-const resumeClasses = () => `${ResumeStyle.resume} ${Style.center}`;
 
 const ResumeDocument = () => (
   <Document file="resume.pdf">
@@ -56,18 +49,18 @@ class Resume extends React.Component {
       resumeDocument = <ResumeDocument />;
       buttonProps = {
         handleClick: this.handleHideResumeClick,
-        value: "Hide Resume",
+        value: 'Hide Resume',
       };
     } else {
       resumeDocument = <hr />;
       buttonProps = {
         handleClick: this.handleViewResumeClick,
-        value: "View Resume",
+        value: 'View Resume',
       };
     }
 
     return (
-      <div className={resumeClasses()}>
+      <div className="Resume center">
         {ResumeButton(buttonProps)}
         {resumeDocument}
       </div>
@@ -76,12 +69,16 @@ class Resume extends React.Component {
 }
 
 ResumeButton.propTypes = {
-  value: PropTypes.string,
-  handleClick: PropTypes.func,
+  value: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 
 Resume.propTypes = {
   resumeVisible: PropTypes.bool,
+};
+
+Resume.defaultProps = {
+  resumeVisible: false,
 };
 
 export default Resume;

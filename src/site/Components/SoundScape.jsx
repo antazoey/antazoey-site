@@ -1,6 +1,4 @@
-import React from "react";
-import SoundScapeStyle from "./soundscape.css";
-import Style from "../../../styles.css";
+import React from 'react';
 
 const soundScapeClasses = () => `${SoundScapeStyle.SoundScape}`;
 const playerClasses = () => `${SoundScapeStyle.Player}`;

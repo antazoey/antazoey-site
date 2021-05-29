@@ -17,6 +17,7 @@ settings:
         - ".js"
         - ".jsx"
         - ".css"
+        - ".png"
 globals:
   assert: true
 rules:

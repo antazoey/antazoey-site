@@ -1,9 +1,42 @@
+a {
+  color: #66FF99;
+}
 
 body {
   background-color: black;
 }
 
-.center {
+
+.app-button {
+  background-color: black;
+  border: black;
+  color: whitesmoke;
+  font-size: 0.84em;
+  cursor: pointer;
+  outline: 0;
+  text-decoration: none;
+}
+
+.app-button:hover {
+  color: transparent;
+  text-shadow: 0 -0.25em 0 #66FF99, 0 -0.25em 0 #66FF99,
+  0 -0.25em 0 #66FF99, 0 -0.25em 0 #66FF99;
+}
+
+.app-button-no-effect {
+  background-color: black;
+  border: black;
+  color: whitesmoke;
+  font-size: 0.84em;
+  cursor: pointer;
+  outline: 0;
+}
+
+.Art {
+  margin-bottom: 5rem;
+}
+
+.Center {
   width: 50%;
   margin: auto;
 }
@@ -12,16 +45,105 @@ body {
   opacity: 0;
 }
 
-.nerdFont {
-  font-family: 'IBM Plex Mono', monospace;
+.Image {
+  width: 50%;
+  transform: translateX(50%);
 }
 
-.juliya-red {
+.Juliya-red {
   color: #990066;
 }
 
-.juliya-blue {
+.Juliya-blue {
   color: #66FF99;
+}
+
+.Jumbotron {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2em;
+  background: black;
+}
+
+.JumbotronTitle {
+  font-weight: bold;
+}
+
+.NavBar {
+  letter-spacing: 2px;
+}
+
+.NavItem {
+  transition: .3s ease;
+}
+
+.NerdFont {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.PatchDay {
+  position: relative;
+  display: block;
+  margin: auto;
+  transition: .5s ease;
+}
+
+.PDButton {
+  display: block;
+  margin: auto;
+  border-radius: 2em;
+  width: 128px;
+  height: 128px;
+  background-color: transparent;
+  border-color: transparent;
+  border-width: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.PDButton:hover .pdImage {
+  opacity: 0.5;
+}
+
+.PDImage {
+  display: block;
+  margin: auto;
+  width: 128px;
+  height: 128px;
+  border-radius: 2rem;
+  cursor: pointer;
+  outline: 0;
+}
+
+.Player {
+  width: 500px;
+  height: 300px;
+}
+
+.Resume {
+}
+
+.ResumeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 9rem;
+  min-width: 7rem;
+  transition: 0.3s ease;
+  background-color: transparent;
+  color: #66FF99;
+  font-size: 78%;
+  border-color: #66FF99;
+  border-radius: 0.95rem;
+  margin-bottom: 1.24rem;
+  outline: 0;
+}
+
+.ResumeButton:hover {
+  border-color: #990066;
+  color: #990066;
+  cursor: pointer;
 }
 
 .SharedText {
@@ -35,6 +157,34 @@ body {
   font-family: 'IBM Plex Mono', monospace;
 }
 
-a {
-  color: #66FF99;
+.SoundScape {
+  text-align:center;
+  width:100%;
+}
+
+.SoundScapeTitle {
+  color: whitesmoke;
+}
+
+.Yingthi {
+  padding-top: 4em;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.YingthiTitle {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.title-app-button {
+  background-color: black;
+  border: black;
+  color: white;
+  font-family: 'Caveat', cursive;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
 }

@@ -1,14 +1,14 @@
-import React from "react";
-import YingthiImage from "../../../Images/yingthi.jpg";
-import YingthiStyle from "./yingthi.css";
-import Style from "../../../styles.css";
+import React from 'react';
+import YingthiImage from '../../../Images/yingthi.jpg';
+import YingthiStyle from './yingthi.css';
+import Style from '../../../styles.css';
 
 const titleClasses = `${YingthiStyle.Title} ${Style.nerdFont}`;
 
 const Yingthi = () => (
   <div className={YingthiStyle.Yingthi}>
     <p className={titleClasses}>Yingthi Music</p>
-    <a href="https://yingthi.bandcamp.com/">
+    <a href="https://yingthi.bandcamp.com/Yingthi.jsx">
       <img
         className={YingthiStyle.Image}
         src={YingthiImage}

@@ -41,6 +41,7 @@ module.exports = {
       Components: path.resolve(__dirname, "src/site/Components/"),
       Styles: path.resolve(__dirname, "src/site/Styles/"),
       Images: path.resolve(__dirname, "src/site/Images/"),
+      Utilities: path.resolve(__dirname, "src/site/Utilities/"),
     },
   },
   plugins: [

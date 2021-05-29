@@ -1,10 +1,10 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
-import { hot } from "react-hot-loader";
-import Jumbotron from "Components/jumbotron";
-import AboutJules from "Components/about";
-import PatchDay from "Components/code";
-import Art from "Components/art";
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import { hot } from 'react-hot-loader';
+import Jumbotron from 'Components/Jumbotron';
+import AboutJules from 'Components/About';
+import PatchDay from 'Components/Code';
+import Art from 'Components/Art';
 
 const App = () => (
   <div>
