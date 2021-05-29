@@ -22,11 +22,11 @@
     "npm": ">=3"
   },
   "dependencies": {
+    "koa-connect": "^2.1.0",
     "pdfobject": "^2.1.1",
-    "prop-types": "15.6.2",
     "react": "16.14.0",
-    "react-bootstrap": "^0.32.4",
-    "react-dom": "16.6.3",
+    "react-bootstrap": "1.6.0",
+    "react-dom": "16.8.0",
     "react-hot-loader": "4.3.12",
     "react-pdf": "^4.0.2",
     "react-router-dom": "^4.3.1"
