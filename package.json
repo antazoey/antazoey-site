@@ -2,7 +2,7 @@
   "name": "juliyasmith",
   "version": "1.0.0",
   "description": "Juliya Smith Support Site",
-  "main": "index.js",
+  "main": "src/index.jsx",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --open",
     "build": "NODE_ENV=production webpack",
@@ -17,35 +17,27 @@
   "author": "Juliya Smith",
   "license": "ISC",
   "private": false,
-  "engines": {
-    "node": ">=15.13.0",
-    "npm": ">=7.7.6"
-  },
   "dependencies": {
-    "koa-connect": "^2.1.0",
-    "pdfobject": "^2.2.5",
-    "react": "17.0.2",
-    "react-bootstrap": "1.6.0",
-    "react-dom": "17.0.2",
-    "react-hot-loader": "4.13.0",
-    "react-pdf": "^5.3.0",
-    "react-router-dom": "^5.2.0"
-  },
-  "resolutions": {
-    "babel-core": "7.0.0-bridge.0"
+    "@material-ui/core": "^4.11.2",
+    "react": "^16.14.0",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "^16.14.0",
+    "react-hot-loader": "^4.13.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/preset-env": "^7.14.4",
-    "@babel/preset-react": "^7.13.13",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.6",
-    "eslint": "^7.27.0",
-    "file-loader": "6.2.0",
-    "html-webpack-plugin": "4.5.2",
-    "webpack": "4.46.0",
+    "eslint": "^6.8.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "react-router-dom": "^5.2.0",
+    "style-loader": "^1.3.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.2",
-    "webpack-merge": "4.1.4"
+    "webpack-dev-server": "^3.11.0"
   }
 }
