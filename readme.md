@@ -2,6 +2,12 @@
 
 My portfolio website hosted on GitHub.
 
+## Installation
+
+```bash
+npm install
+```
+
 ## Running locally
 
 ```bash
