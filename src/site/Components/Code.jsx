@@ -4,30 +4,24 @@ import { Button } from 'react-bootstrap';
 import pdLogo from 'Resources/pdlogo.png';
 import detectMobile from 'Utilities/mobileDetect';
 
-const pdClasses = () => `${Style.center} ${CodeStyles.patchDay}`;
-const pdButtonClasses = () => `${CodeStyles.pdButton}`;
-const pdImageClasses = () => `${CodeStyles.pdImage}`;
-
 const PDButton = props => {
   const { handleHover } = props;
   return (
     <Button
-      className={pdButtonClasses()}
+      className="PDButton"
       onMouseEnter={handleHover}
       onClick={() => {
         window.location.href = 'https://github.com/unparalleled-js/PatchDay';
       }}
     >
-      <img src={pdLogo} alt="PatchDay App Logo" className={pdImageClasses()} />
+      <img src={pdLogo} alt="PatchDay App Logo" className="PDImage" />
     </Button>
   );
 };
 
 const PDText = textVisible => {
   const hideText = textVisible || detectMobile();
-  const classes = hideText
-    ? `${Style.SharedText}`
-    : `${Style.SharedText} ${Style.hide}`;
+  const classes = hideText ? 'SharedText' : 'SharedText Hide';
   return (
     <div className={classes}>
       <h1 id="patchday">PatchDay</h1>
@@ -60,7 +54,7 @@ class PatchDay extends React.Component {
       handleHover: this.handleHover,
     };
     return (
-      <div className={pdClasses()}>
+      <div className="center PatchDay">
         {PDButton(buttonProps)}
         {PDText(textVisible)}
       </div>
@@ -69,11 +63,15 @@ class PatchDay extends React.Component {
 }
 
 PDButton.propTypes = {
-  handleHover: PropTypes.func,
+  handleHover: PropTypes.func.isRequired,
 };
 
 PatchDay.propTypes = {
   textVisible: PropTypes.bool,
+};
+
+PatchDay.defaultProps = {
+  textVisible: false,
 };
 
 export default PatchDay;

@@ -6,7 +6,7 @@ import NavBar from 'Components/NavBar';
 const Jumbotron = ({ title }) => (
   <div className="Jumbotron NerdFont">
     <h1 className="text-center">
-      <Link to="/" className='JumbotronTitle title-app-button'>
+      <Link to="/" className="JumbotronTitle title-app-button">
         {title}
       </Link>
     </h1>

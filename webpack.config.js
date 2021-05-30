@@ -39,7 +39,7 @@ module.exports = {
     extensions: [".js", ".json", ".jsx", ".css"],
     alias: {
       Components: path.resolve(__dirname, "src/site/Components/"),
-      Styles: path.resolve(__dirname, "src/site/Styles/"),
+      Resources: path.resolve(__dirname, "src/site/Resources/"),
       Images: path.resolve(__dirname, "src/site/Images/"),
       Utilities: path.resolve(__dirname, "src/site/Utilities/"),
     },
