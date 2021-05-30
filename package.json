@@ -11,8 +11,8 @@
   "main": "src/site/index.jsx",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --open",
-    "build": "NODE_ENV=production webpack",
-    "clean": "rm -rf build",
+    "build": "npm run clean && NODE_ENV=production webpack && cp ./resume.pdf dist/resume.pdf",
+    "clean": "rm -rf dist",
     "format": "prettier --write 'packages/**/*.js'",
     "deploy": "./deploy.sh",
     "lint": "npx eslint . --ext .js,.jsx --fix"
