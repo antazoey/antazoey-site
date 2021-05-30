@@ -40,7 +40,7 @@ module.exports = {
     alias: {
       Components: path.resolve(__dirname, "src/site/Components/"),
       Resources: path.resolve(__dirname, "src/site/Resources/"),
-      Images: path.resolve(__dirname, "src/site/Images/"),
+      Styles: path.resolve(__dirname, "src/site/Styles/"),
       Utilities: path.resolve(__dirname, "src/site/Utilities/"),
     },
   },

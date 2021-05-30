@@ -5,6 +5,7 @@ import Jumbotron from 'Components/Jumbotron';
 import AboutJules from 'Components/About';
 import PatchDay from 'Components/Code';
 import Art from 'Components/Art';
+import 'Styles/App';
 
 const App = () => (
   <div>

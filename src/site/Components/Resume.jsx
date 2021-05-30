@@ -10,7 +10,7 @@ const ResumeButton = props => {
   return (
     <Button
       variant="outline-primary"
-      className={resumeButtonClasses()}
+      className={resumeButtonClasses}
       onClick={handleClick}
     >
       {value}
