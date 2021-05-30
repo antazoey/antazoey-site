@@ -4,7 +4,11 @@ import Yingthi from 'Components/Yingthi';
 
 const Art = () => (
   <div className="Art">
+    <br />
     <SoundScape />
+    <br />
+    <br />
+    <br />
     <Yingthi />
   </div>
 );
