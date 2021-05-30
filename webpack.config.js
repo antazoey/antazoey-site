@@ -19,7 +19,7 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif|svg|pdf)$/,
         use: [
           {
             loader: "file-loader",
@@ -36,10 +36,10 @@ module.exports = {
       "node_modules",
       path.resolve(__dirname, "app"),
     ],
-    extensions: [".js", ".json", ".jsx", ".css"],
+    extensions: [".js", ".json", ".jsx", ".css", ".png", ".jpg"],
     alias: {
       Components: path.resolve(__dirname, "src/site/Components/"),
-      Resources: path.resolve(__dirname, "src/site/Resources/"),
+      Images: path.resolve(__dirname, "src/site/Images/"),
       Styles: path.resolve(__dirname, "src/site/Styles/"),
       Utilities: path.resolve(__dirname, "src/site/Utilities/"),
     },
