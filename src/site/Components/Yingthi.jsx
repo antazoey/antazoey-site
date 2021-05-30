@@ -1,5 +1,5 @@
 import React from 'react';
-import YingthiImage from 'Images/yingthi.jpg';
+import YingthiImage from 'Images/yingthi';
 
 const Yingthi = () => (
   <div className="YingthiTitle NerdFont">

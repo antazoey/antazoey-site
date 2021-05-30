@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
-import pdLogo from 'Images/pdlogo.png';
+import pdLogo from 'Images/pdlogo';
 import detectMobile from 'Utilities/mobileDetect';
 
 const PDButton = props => {
