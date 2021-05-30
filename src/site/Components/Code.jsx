@@ -21,7 +21,7 @@ const PDButton = props => {
 
 const PDText = textVisible => {
   const hideText = textVisible || detectMobile();
-  const classes = hideText ? 'SharedText' : 'SharedText Hide';
+  const classes = hideText ? 'SharedText' : 'SharedText hide';
   return (
     <div className={classes}>
       <h1 id="patchday">PatchDay</h1>
