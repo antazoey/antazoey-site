@@ -1,10 +1,10 @@
 import React from 'react';
-import SoundScapeStyle from './soundscape.css';
-import Style from '../../../styles.css';
+import Style from '@styles/styles.css';
+import SoundScapeStyles from './styles.css';
 
-const soundScapeClasses = () => `${SoundScapeStyle.SoundScape}`;
-const playerClasses = () => `${SoundScapeStyle.Player}`;
-const titleClasses = () => `${SoundScapeStyle.Title} ${Style.nerdFont}`;
+const soundScapeClasses = () => `${SoundScapeStyles.SoundScape}`;
+const playerClasses = () => `${SoundScapeStyles.Player}`;
+const titleClasses = () => `${SoundScapeStyles.Title} ${Style.nerdFont}`;
 
 const SoundScape = () => (
   <div className={soundScapeClasses()}>

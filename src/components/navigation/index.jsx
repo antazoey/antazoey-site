@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import NavStyle from './navbar.css';
-import Style from '../../styles.css';
-import ButtonStyle from '../../app-button-styles.css';
+import Style from '@styles/styles.css';
+import ButtonStyle from '@styles/buttons.css';
+import NavigationStyles from './styles.css';
 
-const classes = `${NavStyle.navBar} ${Style.nerdFont}`;
+const classes = `${NavigationStyles.navigation} ${Style.nerdFont}`;
 const linkClass = `${ButtonStyle['app-button']} ${Style.nerdFont} ${
-  NavStyle.navItem
+  NavigationStyles.navItem
 }`;
 
 const BarItems = () => {
@@ -29,6 +29,6 @@ const BarItems = () => {
   );
 };
 
-const NavBar = () => <div className={classes}>{BarItems()}</div>;
+const Navigation = () => <div className={classes}>{BarItems()}</div>;
 
-export default NavBar;
+export default Navigation;

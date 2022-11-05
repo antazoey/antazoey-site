@@ -1,7 +1,7 @@
-.navBar {
+.navigation {
   letter-spacing: 2px;
 }
 
-.navItem {
+.navigationItem {
   transition: .3s ease;
 }

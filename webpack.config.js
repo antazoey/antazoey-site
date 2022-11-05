@@ -1,11 +1,62 @@
-const webpackMerge = require('webpack-merge');
-const common = require('./webpack/webpack.common');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-const envs = {
-  development: 'dev',
-  production: 'prod',
+module.exports = {
+  entry: "./src/index.jsx",
+  output: {
+    path: path.join(__dirname, "/dist"),
+    filename: "index-bundle.js"
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ["babel-loader"]
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+              modules: true,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'images',
+            },
+          },
+        ],
+      },
+    ]
+  },
+  resolve: {
+    modules: [
+      "node_modules",
+      path.resolve(__dirname, "app"),
+    ],
+    extensions: [".js", ".json", ".jsx", ".css"],
+    alias: {
+      '@juliya': path.resolve(__dirname, 'src/'),
+      '@components': path.resolve(__dirname, 'src/components/'),
+      '@images': path.resolve(__dirname, 'src/images/'),
+      '@styles': path.resolve(__dirname, 'src/styles/'),
+      '@resources': path.resolve(__dirname, 'src/resources/')
+    },
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/template.html"
+    })
+  ]
 };
-/* eslint-disable global-require,import/no-dynamic-require */
-const env = envs[process.env.NODE_ENV || 'development'];
-const envConfig = require(`./webpack/webpack.${env}.js`);
-module.exports = webpackMerge(common, envConfig);

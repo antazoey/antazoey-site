@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
-import pdLogo from '../../resources/pdlogo.png';
-import CodeStyles from './code.css';
-import Style from '../../styles.css';
-import detectMobile from '../../mobile-detect';
+import pdLogo from '@resources/pdlogo.png';
+import Style from '@styles/styles.css';
+import detectMobile from '@juliya/mobile-detect';
+import CodeStyles from './styles.css';
 
 const pdClasses = () => `${Style.center} ${CodeStyles.patchDay}`;
 const pdButtonClasses = () => `${CodeStyles.pdButton}`;

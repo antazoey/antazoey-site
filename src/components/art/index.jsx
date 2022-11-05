@@ -1,6 +1,6 @@
 import React from 'react';
-import SoundScape from './soundscape';
-import Yingthi from './yingthi';
+import SoundScape from '@components/art/soundscape';
+import Yingthi from '@components/art/yingthi';
 import ArtStyle from './art.css';
 
 const Art = () => (
