@@ -1,4 +1,9 @@
-.About {
-    color: whitesmoke;
-    width: 50%
+.about {
+  color: whitesmoke;
+  width: 50%;
+}
+
+header {
+  width: 50%;
+  font-size: 2em;
 }

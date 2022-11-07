@@ -21,8 +21,8 @@
 
 .app-button:hover {
   color: transparent;
-  text-shadow: 0 -0.25em 0 #66FF99, 0 -0.25em 0 #66FF99,
-    0 -0.25em 0 #66FF99, 0 -0.25em 0 #66FF99;
+  text-shadow: 0 -0.25em 0 #66ff99, 0 -0.25em 0 #66ff99, 0 -0.25em 0 #66ff99,
+    0 -0.25em 0 #66ff99;
 }
 
 .app-button-no-effect {

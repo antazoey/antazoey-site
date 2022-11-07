@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
 import pdLogo from '@resources/pdlogo.png';
-import Style from '@styles/styles.css';
+import AppStyles from '@styles/styles.css';
 import detectMobile from '@juliya/mobile-detect';
-import CodeStyles from './styles.css';
+import LocalStyles from './styles.css';
 
-const pdClasses = () => `${Style.center} ${CodeStyles.patchDay}`;
+const pdClasses = () => `${AppStyles.center} ${LocalStyles.patchDay}`;
 const pdButtonClasses = () => `${CodeStyles.pdButton}`;
 const pdImageClasses = () => `${CodeStyles.pdImage}`;
 
-const PDButton = props => {
+const PDButton = (props) => {
   const { handleHover } = props;
   return (
     <Button
@@ -25,11 +25,11 @@ const PDButton = props => {
   );
 };
 
-const PDText = textVisible => {
+const PDText = (textVisible) => {
   const hideText = textVisible || detectMobile();
   const classes = hideText
-    ? `${Style.SharedText}`
-    : `${Style.SharedText} ${Style.hide}`;
+    ? `${Style.sharedText}`
+    : `${Style.sharedText} ${Style.hide}`;
   return (
     <div className={classes}>
       <h1 id="patchday">PatchDay</h1>

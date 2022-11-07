@@ -1,0 +1,37 @@
+/*  ** Global Variables ** */
+
+@juliyaRed: #990066;
+@juliyaGreen: #66ff99;
+@nerdFont: 'IBM Plex Mono', monospace;
+
+/*  ** Customizations ** */
+
+body {
+  background-color: black;
+}
+
+a {
+  color: @juliyaGreen
+}
+
+/* ** Mixins ** */
+
+.centered {
+  width: 50%;
+  margin: auto;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.text {
+  max-width: 1000px;
+  margin: auto;
+  display: block;
+  text-align: justify-all;
+  font-size: 1.125em;
+  color: whitesmoke;
+  transition: 0.5s ease;
+  font-family: @nerdFont
+}

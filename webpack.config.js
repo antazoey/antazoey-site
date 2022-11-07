@@ -38,6 +38,22 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.less$/i,
+        exclude: /\.module\.(less)$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" },
+          {
+            loader: "less-loader",
+            options: {
+              lessOptions: {
+                javascriptEnabled: true,
+              },
+            },
+          },
+        ],
+      }
     ]
   },
   resolve: {

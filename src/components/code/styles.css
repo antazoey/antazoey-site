@@ -1,33 +1,33 @@
 .patchDay {
-    position: relative;
-    display: block;
-    margin: auto;
-    transition: .5s ease;
+  position: relative;
+  display: block;
+  margin: auto;
+  transition: 0.5s ease;
 }
 
 .pdButton {
-    display: block;
-    margin: auto;
-    border-radius: 2em;
-    width: 128px;
-    height: 128px;
-    background-color: transparent;
-    border-color: transparent;
-    border-width: 0;
-    outline: 0;
-    cursor: pointer;
+  display: block;
+  margin: auto;
+  border-radius: 2em;
+  width: 128px;
+  height: 128px;
+  background-color: transparent;
+  border-color: transparent;
+  border-width: 0;
+  outline: 0;
+  cursor: pointer;
 }
 
 .pdImage {
-    display: block;
-    margin: auto;
-    width: 128px;
-    height: 128px;
-    border-radius: 2rem;
-    cursor: pointer;
-    outline: 0;
+  display: block;
+  margin: auto;
+  width: 128px;
+  height: 128px;
+  border-radius: 2rem;
+  cursor: pointer;
+  outline: 0;
 }
 
 .pdButton:hover .pdImage {
-    opacity: 0.5;
+  opacity: 0.5;
 }

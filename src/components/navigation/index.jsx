@@ -5,12 +5,10 @@ import ButtonStyle from '@styles/buttons.css';
 import NavigationStyles from './styles.css';
 
 const classes = `${NavigationStyles.navigation} ${Style.nerdFont}`;
-const linkClass = `${ButtonStyle['app-button']} ${Style.nerdFont} ${
-  NavigationStyles.navItem
-}`;
+const linkClass = `${ButtonStyle['app-button']} ${Style.nerdFont} ${NavigationStyles.navItem}`;
 
 const BarItems = () => {
-  const numStyle = Style['juliya-red'];
+  const numStyle = Style['juliyaRed'];
   const item = (itemClasses, value, deliminator) => (
     <span>
       <Link to={`/${value.toLowerCase()}`} className={itemClasses}>

@@ -1,16 +1,16 @@
 .Yingthi {
-    padding-top: 4em;
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
+  padding-top: 4em;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .Image {
-    width: 50%;
-    transform: translateX(50%);
+  width: 50%;
+  transform: translateX(50%);
 }
 
 .Title {
-    color: whitesmoke;
-    text-align: center;
+  color: whitesmoke;
+  text-align: center;
 }
