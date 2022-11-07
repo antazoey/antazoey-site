@@ -1,10 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { hot } from 'react-hot-loader';
-import ViewController from '@components/viewcontroller';
 import AboutJules from '@components/about';
-import PatchDay from '@components/code';
-import Art from '@components/art';
+import ViewController from '@components/viewcontroller';
 
 const App = () => (
   <div>
@@ -12,8 +10,8 @@ const App = () => (
     <Switch>
       <Route path="/" exact component={AboutJules} />
       <Route path="/about" component={AboutJules} />
-      <Route path="/code" component={PatchDay} />
-      <Route path="/art" component={Art} />
+      <Route path="/code" component={AboutJules} />
+      <Route path="/art" component={AboutJules} />
     </Switch>
   </div>
 );

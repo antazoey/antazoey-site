@@ -11,7 +11,7 @@ body {
 }
 
 a {
-  color: @juliyaGreen
+  color: @juliyaGreen;
 }
 
 /* ** Mixins ** */
@@ -27,11 +27,18 @@ a {
 
 .text {
   max-width: 1000px;
-  margin: auto;
   display: block;
   text-align: justify-all;
   font-size: 1.125em;
   color: whitesmoke;
   transition: 0.5s ease;
-  font-family: @nerdFont
+  font-family: @nerdFont;
+  .centered();
+}
+
+.clickable {
+  background-color: black;
+  border: black;
+  cursor: pointer;
+  outline: 0;
 }

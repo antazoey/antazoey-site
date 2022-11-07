@@ -1,32 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Style from '@styles/styles.css';
-import ButtonStyle from '@styles/buttons.css';
-import NavigationStyles from './styles.css';
 
-const classes = `${NavigationStyles.navigation} ${Style.nerdFont}`;
-const linkClass = `${ButtonStyle['app-button']} ${Style.nerdFont} ${NavigationStyles.navItem}`;
+import Styles from './styles.less';
 
-const BarItems = () => {
-  const numStyle = Style['juliyaRed'];
-  const item = (itemClasses, value, deliminator) => (
+const NavigationItems = () => {
+  const item = (value, deliminator) => (
     <span>
-      <Link to={`/${value.toLowerCase()}`} className={itemClasses}>
+      <Link to={`/${value.toLowerCase()}`} className={Styles.navigationItem}>
         {value}
       </Link>
-      <span className={numStyle}>{deliminator}</span>
+      <span className={Styles.number}>{deliminator}</span>
     </span>
   );
   return (
     <p>
       <span className={numStyle}>00</span>
-      {item(linkClass, 'About', '01')}
-      {item(linkClass, 'Code', '10')}
-      {item(linkClass, 'Art', '11')}
+      {item('About', '01')}
+      {item('Code', '10')}
+      {item('Art', '11')}
     </p>
   );
 };
 
-const Navigation = () => <div className={classes}>{BarItems()}</div>;
+const Navigation = () => <div className={classes}>{NavigationItems()}</div>;
 
 export default Navigation;

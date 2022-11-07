@@ -66,13 +66,12 @@ module.exports = {
       '@juliya': path.resolve(__dirname, 'src/'),
       '@components': path.resolve(__dirname, 'src/components/'),
       '@images': path.resolve(__dirname, 'src/images/'),
-      '@styles': path.resolve(__dirname, 'src/styles/'),
-      '@resources': path.resolve(__dirname, 'src/resources/')
+      '@styles': path.resolve(__dirname, 'src/styles.less'),
     },
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/template.html"
+      template: "./src/index.html"
     })
   ]
 };
