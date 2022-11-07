@@ -1,27 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Styles from './styles.less';
+import './styles.less';
 
-const NavigationItems = () => {
-  const item = (value, deliminator) => (
-    <span>
-      <Link to={`/${value.toLowerCase()}`} className={Styles.navigationItem}>
-        {value}
-      </Link>
-      <span className={Styles.number}>{deliminator}</span>
-    </span>
+const Navigation = () => {
+  const navigationButton = (titleName) => (
+    <Link to={`${titleName.toLowerCase()}`} className="navigationButton">
+      {titleName}
+    </Link>
   );
   return (
-    <p>
-      <span className={numStyle}>00</span>
-      {item('About', '01')}
-      {item('Code', '10')}
-      {item('Art', '11')}
-    </p>
+    <div id="navigation">
+      <span className="navigationNumber">
+        00
+        {navigationButton('About')}
+        01
+        {navigationButton('Code')}
+        10
+        {navigationButton('Art')}
+        11
+      </span>
+    </div>
   );
 };
-
-const Navigation = () => <div className={classes}>{NavigationItems()}</div>;
 
 export default Navigation;

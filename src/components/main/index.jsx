@@ -1,23 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import Navigation from '@components/navigation/index.jsx';
+import PropTypes from 'prop-types';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './styles.less';
 
-const ViewController = ({ title }) => (
+const MainContainer = () => (
   <div id="viewController">
-    <h1 className="text-center">
+    <h1 className="">
       <Link to="/" id="websiteTitle">
-        {title}
+        Juliya Smith
       </Link>
     </h1>
     <Navigation />
   </div>
 );
 
-ViewController.propTypes = {
+MainContainer.propTypes = {
   title: PropTypes.string,
 };
 
-export default ViewController;
+export default MainContainer;

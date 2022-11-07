@@ -1,12 +1,12 @@
-import React from 'react';
-import { Route, Switch } from 'react-router-dom';
-import { hot } from 'react-hot-loader';
 import AboutJules from '@components/about';
-import ViewController from '@components/viewcontroller';
+import MainContainer from '@components/main';
+import React from 'react';
+import { hot } from 'react-hot-loader';
+import { Route, Switch } from 'react-router-dom';
 
 const App = () => (
   <div>
-    <ViewController title="Juliya Smith" />
+    <MainContainer />
     <Switch>
       <Route path="/" exact component={AboutJules} />
       <Route path="/about" component={AboutJules} />
