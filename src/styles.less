@@ -8,6 +8,8 @@
 
 body {
   background-color: black;
+  max-width: 100ch;
+  margin: auto;
 }
 
 a {
@@ -27,45 +29,49 @@ a:active {
   text-decoration: none;
 }
 
-a:hover {
-  .highlighted();
+hr {
+  color: whitesmoke;
+  max-width: 70ch;
 }
 
 /* ** Mixins ** */
-
-.centered {
-  width: 50%;
-  margin: auto;
-}
 
 .hidden {
   opacity: 0;
 }
 
 .allText {
-  max-width: 1000px;
-  display: block;
-  text-align: justify-all;
-  font-size: 1.125em;
-  transition: 0.5s ease;
+  transition: 0.65s ease;
   font-family: @nerdFont;
+  text-align: center;
+  margin-top: 0.5em;
 }
 
 .contentText {
+  font-size: 1.2em;
   color: whitesmoke;
   .allText();
-  .centered();
 }
 
 .clickable {
-  background-color: black;
-  border: black;
   cursor: pointer;
   outline: 0;
 }
 
 .highlighted {
   color: transparent;
-  text-shadow: 0 -0.25em 0 #66ff99, 0 -0.25em 0 #66ff99, 0 -0.25em 0 #66ff99,
-    0 -0.25em 0 #66ff99;
+  text-shadow: 0 -0.25em 0 @juliyaGreen, 0 -0.25em 0 @juliyaGreen,
+    0 -0.25em 0 @juliyaGreen, 0 -0.25em 0 @juliyaGreen;
+}
+
+.contentLink {
+  color: @juliyaGreen;
+}
+
+.contentLink:hover {
+  .highlighted();
+}
+
+.icon {
+  height: 1.25em;
 }

@@ -4,8 +4,8 @@
   "description": "Juliya Smith Support Site",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development webpack serve --open",
-    "build": "NODE_ENV=production webpack",
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
     "clean": "rm -rf build",
     "format": "prettier --write 'packages/**/*.js'",
     "deploy": "scripts/deploy.sh",

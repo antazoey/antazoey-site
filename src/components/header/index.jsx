@@ -1,23 +1,24 @@
-import Navigation from '@components/navigation/index.jsx';
+import Navigation from '@components/header/navigation/index.jsx';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './styles.less';
 
-const MainContainer = () => (
-  <div id="viewController">
-    <h1 className="">
+const Header = () => (
+  <div id="header">
+    <h1>
       <Link to="/" id="websiteTitle">
         Juliya Smith
       </Link>
     </h1>
     <Navigation />
+    <hr />
   </div>
 );
 
-MainContainer.propTypes = {
+Header.propTypes = {
   title: PropTypes.string,
 };
 
-export default MainContainer;
+export default Header;

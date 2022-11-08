@@ -1,20 +1,17 @@
-@import '../../styles';
+@import '../../../styles';
 
 #navigation {
-  letter-spacing: 2px;
   font-style: @nerdFont;
-  position: relative;
-  width: 100%;
-  .centered();
-}
-
-.navigationNumber {
-  color: @juliyaRed;
   .allText();
+  color: @juliyaRed;
 }
 
 .navigationButton {
   transition: 0.3s ease;
   font-style: @nerdFont;
   color: whitesmoke;
+}
+
+.navigationButton:hover {
+  .highlighted();
 }
