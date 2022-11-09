@@ -6,23 +6,20 @@
 # ./deploy.sh or `npm run deploy`.
 #
 
-set -eu
+set -euo pipefail
 
 
 main() {
   # Should be the directory of the github site repo (the one that hosts the build files).
-  deploy_dir="${1:?Missing required parameter 'deploy_dir' at param1.}"
+  deploy_dir="${1:-Missing required parameter 'deploy_dir' at param1.}"
 
   npm run clean
   npm run build
 
-  echo "Waiting for /build to exist..."
-  sleep 25
-
   # Remove files that will be regenerated with different names.
-  rm ${deploy_dir}/vendors~pdfjsWorker.*
+  rm -rf ${deploy_dir}/vendors~pdfjsWorker.*
 
-  cp -r build/* "${deploy_dir}"
+  cp -r dist/* "${deploy_dir}"
   pushd "${deploy_dir}"
   git pull
   git add --all
@@ -34,4 +31,10 @@ main() {
   popd
 }
 
-main "$@" $PORTFOLIO_SITE_PATH
+if [[ -z "${PORTFOLIO_SITE_PATH}" ]]; then
+  echo "Must set environment variable PORTFOLIO_SITE_PATH"
+  echo "See README for more instructions."
+  exit 1
+fi
+
+main "$@" "${PORTFOLIO_SITE_PATH}"
