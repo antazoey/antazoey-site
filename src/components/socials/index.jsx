@@ -8,19 +8,23 @@ const idToSocialUrl = {
   GH: 'https://github.com/antazoey',
   TW: 'https://twitter.com/AdobePup',
   LI: 'https://www.linkedin.com/in/unparalleled-js/',
+  MA: 'https://hachyderm.io/@antazoey">Mastodon',
 };
 
 const Social = ({ socialId }) => {
   const image = (
-    <img className="icon" src={idToIcon[socialId]} alt={socialId} />
+    <img className="icon" src={idToIcon[socialId]} alt={socialId} rel="me" />
   );
   const url = idToSocialUrl[socialId];
   return <ContentLink content={image} href={url} />;
 };
 
 const Socials = () => (
-  <div className="footer">
-    <Social socialId="GH" /> <Social socialId="TW" /> <Social socialId="LI" />
+  <div className="socialList">
+    <Social socialId="GH" />
+    <Social socialId="TW" />
+    <Social socialId="LI" />
+    <Social socialId="MA" />
   </div>
 );
 
