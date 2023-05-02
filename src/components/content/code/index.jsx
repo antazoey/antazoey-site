@@ -47,7 +47,7 @@ const PatchDay = () => (
     <CodeProjectTitleBox
       title="PatchDay"
       dates="2016-present"
-      github="https://github.com/unparalleled-js/patchday-ios"
+      github="https://github.com/antazoey/patchday-ios"
     />
     <div className="contentText">
       An{' '}
@@ -66,7 +66,7 @@ const Norboard = () => (
     <CodeProjectTitleBox
       title="Norboard"
       dates="2019"
-      github="https://github.com/unparalleled-js/norboard"
+      github="https://github.com/antazoey/norboard"
     />
     <div className="contentText">
       An Arduino hobby project where you can play snake using a small screen and

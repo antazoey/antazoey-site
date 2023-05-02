@@ -36,7 +36,7 @@ const Soundscape = () => (
       affects where the beams go. You can find the source code{' '}
       <ContentLink
         content="here"
-        href="https://github.com/unparalleled-js/soundscape"
+        href="https://github.com/antazoey/soundscape"
       />{' '}
       but note that this was very much a hack.
     </div>
@@ -48,7 +48,7 @@ const BounceProject = () => (
     <ProjectTitleBox
       title="Bounce Project"
       dates="2017"
-      github="https://github.com/unparalleled-js/bounce-project"
+      github="https://github.com/antazoey/bounce-project"
       icon="GH"
     />
     <div className="contentText">

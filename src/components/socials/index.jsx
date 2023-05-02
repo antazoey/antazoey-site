@@ -5,7 +5,7 @@ import React from 'react';
 import './styles.less';
 
 const idToSocialUrl = {
-  GH: 'https://github.com/unparalleled-js',
+  GH: 'https://github.com/antazoey',
   TW: 'https://twitter.com/AdobePup',
   LI: 'https://www.linkedin.com/in/unparalleled-js/',
 };

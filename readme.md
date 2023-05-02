@@ -21,7 +21,7 @@ npm start
 First, make sure you have host repo cloned somewhere locally:
 
 ```bash
-git clone https://github.com/unparalleled-js/unparalleled-js.github.io
+git clone https://github.com/antazoey/antzoey.github.io
 ```
 
 Then, add the environment variable to your `*.profile`:
