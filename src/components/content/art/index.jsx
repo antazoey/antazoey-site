@@ -7,9 +7,9 @@ import { ContentLink } from '../../shared';
 const WilderMusic = () => (
   <div>
     <ProjectTitleBox
-      title="Wilder Music"
+      title="Music"
       dates="2007-present"
-      github="https://yingthi.bandcamp.com/album/divine-office"
+      github="https://antazoey.bandcamp.com/album/divine-office"
       icon="BC"
     />
     <div className="contentText">

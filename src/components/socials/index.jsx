@@ -6,7 +6,7 @@ import './styles.less';
 
 const idToSocialUrl = {
   GH: 'https://github.com/antazoey',
-  TW: 'https://twitter.com/AdobePup',
+  TW: 'https://twitter.com/antazoey',
   LI: 'https://www.linkedin.com/in/unparalleled-js/',
   MA: 'https://hachyderm.io/@antazoey">Mastodon',
 };
