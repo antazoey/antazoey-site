@@ -7,7 +7,6 @@ import './styles.less';
 const idToSocialUrl = {
   GH: 'https://github.com/antazoey',
   TW: 'https://twitter.com/antazoey',
-  LI: 'https://www.linkedin.com/in/unparalleled-js/',
   MA: 'https://hachyderm.io/@antazoey">Mastodon',
 };
 
@@ -23,7 +22,6 @@ const Socials = () => (
   <div className="socialList">
     <Social socialId="GH" />
     <Social socialId="TW" />
-    <Social socialId="LI" />
     <Social socialId="MA" />
   </div>
 );
