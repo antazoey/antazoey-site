@@ -1,5 +1,5 @@
+import { idToIcon } from '@antazoey/utils';
 import { ContentLink } from '@components/shared';
-import { idToIcon } from '@juliya/utils';
 import * as PropTypes from 'prop-types';
 import React, { Component } from 'react';
 

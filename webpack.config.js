@@ -1,18 +1,18 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: "./src/index.jsx",
+  entry: './src/index.jsx',
   output: {
-    path: path.join(__dirname, "/dist"),
-    filename: "index-bundle.js"
+    path: path.join(__dirname, '/dist'),
+    filename: 'index-bundle.js',
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ["babel-loader"]
+        use: ['babel-loader'],
       },
       {
         test: /\.css$/,
@@ -42,10 +42,10 @@ module.exports = {
         test: /\.less$/i,
         exclude: /\.module\.(less)$/,
         use: [
-          { loader: "style-loader" },
-          { loader: "css-loader" },
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
           {
-            loader: "less-loader",
+            loader: 'less-loader',
             options: {
               lessOptions: {
                 javascriptEnabled: true,
@@ -53,17 +53,14 @@ module.exports = {
             },
           },
         ],
-      }
-    ]
+      },
+    ],
   },
   resolve: {
-    modules: [
-      "node_modules",
-      path.resolve(__dirname, "app"),
-    ],
-    extensions: [".js", ".json", ".jsx", ".css"],
+    modules: ['node_modules', path.resolve(__dirname, 'app')],
+    extensions: ['.js', '.json', '.jsx', '.css'],
     alias: {
-      '@juliya': path.resolve(__dirname, 'src/'),
+      '@antazoey': path.resolve(__dirname, 'src/'),
       '@components': path.resolve(__dirname, 'src/components/'),
       '@images': path.resolve(__dirname, 'src/images/'),
       '@styles': path.resolve(__dirname, 'src/styles.less'),
@@ -71,7 +68,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html"
-    })
-  ]
+      template: './src/index.html',
+    }),
+  ],
 };

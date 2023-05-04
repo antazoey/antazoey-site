@@ -1,5 +1,5 @@
+import { idToIcon } from '@antazoey/utils';
 import { ContentLink } from '@components/shared';
-import { idToIcon } from '@juliya/utils';
 import React from 'react';
 
 import './styles.less';

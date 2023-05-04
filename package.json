@@ -1,7 +1,7 @@
 {
-  "name": "juliyasmith",
+  "name": "antazoey",
   "version": "1.0.0",
-  "description": "Juliya Smith Support Site",
+  "description": "Antazoey Portfolio Site",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode development",
@@ -13,9 +13,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/antazoey/juliyasmith.git"
+    "url": "git+ssh://git@github.com/antazoey/antazoey-site.git"
   },
-  "author": "Juliya Smith",
+  "author": "Antazoey",
   "license": "ISC",
   "private": false,
   "engines": {

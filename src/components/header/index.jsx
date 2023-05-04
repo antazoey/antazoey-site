@@ -9,7 +9,7 @@ const Header = () => (
   <div id="header">
     <h1>
       <Link to="/" id="websiteTitle">
-        Juliya Smith
+        Antazoey
       </Link>
     </h1>
     <Navigation />
