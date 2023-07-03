@@ -17,11 +17,13 @@ const Ape = () => (
       github="https://github.com/ApeWorX/ape"
     />
     <div className="contentText">
-      I am the principal engineer for{' '}
-      <ContentLink content="ApeWorX" href="https://apeworx.io/" />, and I am
+      I am a principal mad-scientist for{' '}
+      <ContentLink content="ApeWorX" href="https://apeworx.io/" />; we are
       building a multi-blockchain, Python development framework with a
-      plugin-based architecture and a vibrant community. This includes the world
-      of Starknet and other potentially non-EVM ecosystems.
+      plugin-based architecture. It can be used for debugging, testing, and
+      scripting smart-contract projects, including features like coverage,
+      multi-chain connection management, project-templating, rich data displays,
+      and an interactive web3 console.
     </div>
   </div>
 );
@@ -29,15 +31,17 @@ const Ape = () => (
 const Py42 = () => (
   <div>
     <CodeProjectTitleBox
-      title="Py42"
+      title="Py42 and Incydr"
       dates="2019-2021"
       github="https://github.com/code42/py42"
     />
     <div className="contentText">
-      I implemented many features in the Python SDK and CLI for the Code42
-      Insyder suite of security tools and integrated Insyder with Splunk,
-      Palo-Alto Networks XSOAR, and other popular enterprise-level security
-      platforms at the time.
+      This was the pythonic way to talk to Code42's Incydr application, and it
+      allowed us to integrate with various security tools of the time, including
+      SIEM tools like Splunk and response tools like Palo-Alto Networks XSOAR.
+      Additionally, we built a CLI that could send data and respond to
+      data-leaks in your organization. We also developed a Gmail integration
+      (C#) that detected file-leak events.
     </div>
   </div>
 );
