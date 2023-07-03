@@ -14,7 +14,11 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Clone hosted source repository
-        run: git clone https://github.com/antazoey/antzoey.github.io ${{ env.PORTFOLIO_SITE_PATH }}
+        uses: actions/checkout@v2
+        with:
+          repository: antazoey/antzoey.github.io
+          ref: main
+          path: ${{ env.PORTFOLIO_SITE_PATH }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
