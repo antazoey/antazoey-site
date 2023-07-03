@@ -26,8 +26,10 @@ jobs:
           node-version: '14'
 
       - name: Install dependencies
-        # Dev dependencies needing for building.
-        run: npm install --include=dev
+        run: npm install
+
+      - name: Install less
+        run: npm install -g less
 
       - name: Deploy
         run: npm run deploy
