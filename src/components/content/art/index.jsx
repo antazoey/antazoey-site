@@ -4,7 +4,7 @@ import React from 'react';
 
 import { ContentLink } from '../../shared';
 
-const WilderMusic = () => (
+const AntazoeyMusic = () => (
   <div>
     <ProjectTitleBox
       title="Music"
@@ -68,7 +68,7 @@ const BounceProject = () => (
 
 const ArtProjects = () => (
   <div>
-    <WilderMusic />
+    <AntazoeyMusic />
     <br />
     <br />
     <Soundscape />
