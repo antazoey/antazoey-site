@@ -16,7 +16,7 @@ jobs:
       - name: Clone hosted source repository
         uses: actions/checkout@v2
         with:
-          repository: antazoey/antzoey.github.io
+          repository: antazoey/antazoey.github.io
           ref: main
           path: ${{ env.PORTFOLIO_SITE_PATH }}
 
