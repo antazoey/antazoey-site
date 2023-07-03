@@ -27,7 +27,7 @@ git clone https://github.com/antazoey/antzoey.github.io
 Then, add the environment variable to your `*.profile`:
 
 ```bash
-export PORTFOLIO_SITE_PATH=/path/to/local/repo
+        export PORTFOLIO_SITE_PATH=/path/to/local/repo
 ```
 
 ### Updating the site
