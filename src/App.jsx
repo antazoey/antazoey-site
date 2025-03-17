@@ -15,6 +15,7 @@ const App = () => (
       <Route path="/haiku" component={Haiku} />
       <Route path="/code" component={Code} />
       <Route path="/art" component={Art} />
+      <Route path="/patchday" component={Art} />
     </Switch>
     <Socials />
   </div>
