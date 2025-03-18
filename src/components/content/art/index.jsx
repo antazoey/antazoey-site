@@ -12,8 +12,8 @@ const AntazoeyVideo = () => (
       <ContentLink
         content="YouTube Channel"
         href="https://www.youtube.com/@Antazoey"
-      />
-      {' '}for videos on exploring, outdoors, coding, foraging, snowboarding,
+      />{' '}
+      for videos on exploring, outdoors, coding, foraging, snowboarding,
       mountain boarding, off-road motorcycling, and other adventures.
     </div>
   </div>
