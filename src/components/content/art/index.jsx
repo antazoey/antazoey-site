@@ -9,10 +9,10 @@ const AntazoeyMusic = () => (
     <ProjectTitleBox
       title="Music"
       dates="2007-present"
-      github="https://antazoey.bandcamp.com/album/divine-office"
+      page="https://antazoey.bandcamp.com/album/divine-office"
       icon="BC"
     />
-    <div className="contentText">
+    <div className="rootContextText">
       Wilder is an overly-dramatic, industrial, noisy, performance-ridden,
       extra-terrestrial, attention-seeking, artsy, musician who will never
       return to the Mother Planet.
@@ -25,10 +25,10 @@ const Soundscape = () => (
     <ProjectTitleBox
       title="SoundScape Spectrometer"
       dates="2017"
-      github="https://www.youtube.com/watch?v=ndX4ULw5S74"
+      page="https://www.youtube.com/watch?v=ndX4ULw5S74"
       icon="YT"
     />
-    <div className="contentText">
+    <div className="rootContextText">
       A light in a dark room illuminates a microphone facing a series of
       circular white concave disks on drum stands. There are left-over colors
       projected onto the disks. As you speak into the microphone, the colors
@@ -48,10 +48,10 @@ const BounceProject = () => (
     <ProjectTitleBox
       title="Bounce Project"
       dates="2017"
-      github="https://github.com/antazoey/bounce-project"
+      page="https://github.com/antazoey/bounce-project"
       icon="GH"
     />
-    <div className="contentText">
+    <div className="rootContextText">
       An iPad rests on a pedestal in a quiet room in an art museum. It is
       surrounded by five studio monitors, awaiting instruction. The iPad shows
       an application with a single button that says "Bounce" in the center of

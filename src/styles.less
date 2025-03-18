@@ -43,7 +43,6 @@ hr {
 .allText {
   transition: 0.65s ease;
   font-family: @nerdFont;
-  text-align: center;
   margin-top: 0.5em;
 }
 
@@ -51,6 +50,11 @@ hr {
   font-size: 1.2em;
   color: whitesmoke;
   .allText();
+}
+
+.rootContextText {
+  text-align: center;
+  .contentText();
 }
 
 .clickable {

@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 
 class ProjectTitleBox extends Component {
   render() {
-    let { title, dates, github, icon } = this.props;
+    let { title, dates, page, icon } = this.props;
     const image = (
       <img className="icon" src={idToIcon[icon]} alt="Project Source Icon" />
     );
@@ -15,7 +15,7 @@ class ProjectTitleBox extends Component {
         <span className="projectTitle"> {title} </span>({dates}){'    '}
       </div>
     );
-    return <ContentLink content={content} href={github} />;
+    return <ContentLink content={content} href={page} />;
   }
 }
 

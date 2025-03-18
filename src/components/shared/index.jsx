@@ -1,3 +1,4 @@
+import { createTheme } from '@mui/system';
 import '@styles';
 import * as PropTypes from 'prop-types';
 import React from 'react';
@@ -18,4 +19,11 @@ ContentLink.propTypes = {
   href: PropTypes.any,
 };
 
-export { ContentLink };
+const theme = createTheme({
+  palette: {
+    background: {
+      paper: '#000',
+    },
+  },
+});
+export { ContentLink, theme };
