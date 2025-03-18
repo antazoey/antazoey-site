@@ -11,19 +11,19 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Clone hosted source repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: antazoey/antazoey.github.io
           ref: main
           path: ${{ env.PORTFOLIO_SITE_PATH }}
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '14'
+          node-version: '23'
 
       - name: Install dependencies
         run: npm install
