@@ -8,7 +8,7 @@ const Haiku = () => (
     <div className="rootContextText">Welcome to my domain,</div>
     <div className="rootContextText">
       Of{' '}
-      <Link className="contentLink" to="/code">
+      <Link className="contentLink" to="/dev">
         ~/SoftwareProjects
       </Link>{' '}
       and{' '}

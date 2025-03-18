@@ -4,6 +4,21 @@ import React from 'react';
 
 import { ContentLink } from '../../shared';
 
+const AntazoeyVideo = () => (
+  <div>
+    <ProjectTitleBox title="Video" dates="2022-present" icon="YT" />
+    <div className="contentText">
+      See my{' '}
+      <ContentLink
+        content="YouTube Channel"
+        href="https://www.youtube.com/@Antazoey"
+      />
+      {' '}for videos on exploring, outdoors, coding, foraging, snowboarding,
+      mountain boarding, off-road motorcycling, and other adventures.
+    </div>
+  </div>
+);
+
 const AntazoeyMusic = () => (
   <div>
     <ProjectTitleBox
@@ -68,6 +83,9 @@ const BounceProject = () => (
 
 const ArtProjects = () => (
   <div>
+    <AntazoeyVideo />
+    <br />
+    <br />
     <AntazoeyMusic />
     <br />
     <br />

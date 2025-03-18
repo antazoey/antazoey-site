@@ -1,6 +1,6 @@
 # Portfolio Site
 
-My portfolio website hosted on GitHub.
+My portfolio website.
 
 ## Installation
 
