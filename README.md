@@ -23,7 +23,7 @@ The app should now be running on `http://localhost:8080/#`.
 First, make sure you have host repo cloned somewhere locally:
 
 ```bash
-git clone https://github.com/antazoey/antzoey.github.io
+git clone git@github.com:antazoey/antazoey.github.io.git
 ```
 
 Then, add the environment variable to your `*.profile`:

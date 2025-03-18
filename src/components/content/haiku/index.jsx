@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 const Haiku = () => (
   <div>
-    <div className="contentText">Welcome to my domain,</div>
-    <div className="contentText">
+    <div className="rootContextText">Welcome to my domain,</div>
+    <div className="rootContextText">
       Of{' '}
       <Link className="contentLink" to="/dev">
         ~/SoftwareProjects
@@ -17,7 +17,7 @@ const Haiku = () => (
       </Link>
       ,
     </div>
-    <div className="contentText">Won't you look around?</div>
+    <div className="rootContextText">Won't you look around?</div>
   </div>
 );
 

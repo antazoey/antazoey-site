@@ -43,7 +43,6 @@ hr {
 .allText {
   transition: 0.65s ease;
   font-family: @nerdFont;
-  text-align: center;
   margin-top: 0.5em;
 }
 
@@ -53,6 +52,11 @@ hr {
   .allText();
 }
 
+.rootContextText {
+  text-align: center;
+  .contentText();
+}
+
 .clickable {
   cursor: pointer;
   outline: 0;
@@ -60,8 +64,11 @@ hr {
 
 .highlighted {
   color: transparent;
-  text-shadow: 0 -0.25em 0 @antazoeyGreen, 0 -0.25em 0 @antazoeyGreen,
-    0 -0.25em 0 @antazoeyGreen, 0 -0.25em 0 @antazoeyGreen;
+  text-shadow:
+    0 -0.25em 0 @antazoeyGreen,
+    0 -0.25em 0 @antazoeyGreen,
+    0 -0.25em 0 @antazoeyGreen,
+    0 -0.25em 0 @antazoeyGreen;
 }
 
 .contentLink {

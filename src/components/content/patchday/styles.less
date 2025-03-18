@@ -1,10 +1,8 @@
 // Define variables for colors, fonts, and sizes
-@primary-color: #feeeff;
-@secondary-color: pink;
 @link-color: purple;
 @hover-color: #dd37a9;
-@background-white: #ffffff;
 @font-family: 'Roboto', sans-serif;
+@import '../../../styles.less';
 
 // Mixin for reusable text styles
 .text-style(@weight, @size) {
@@ -13,80 +11,55 @@
   font-size: @size;
 }
 
-body {
-  overflow-x: hidden;
-  width: 80%;
-  margin: auto;
-  background-color: @primary-color;
-  align-content: center;
-}
-
-hr {
-  color: @secondary-color;
-}
-
-a {
-  text-decoration: none;
+.pdLink {
   color: @link-color;
-  font-family: @font-family;
-
-  &:hover {
-    color: @hover-color;
-  }
-}
-
-h2 {
-  .text-style(bold, 2.5vh);
-}
-
-h3 {
-  .text-style(bold, 2vh);
-}
-
-p {
   .text-style(100, 1em);
   padding: 0 1.3em;
+  .allText();
 }
 
-ol {
-  .text-style(100, 1em);
-}
-
-li {
-  padding: 10px;
-}
-
-img {
+.pdImg {
   width: 100%;
   height: auto;
   max-width: 400px;
   padding: 2em 1.3em;
 }
 
-img.displayed {
+.pdImg.displayed {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.bannerPd {
+.pdBanner {
   position: relative;
-  background: @background-white url('images/flower-banner.png') center repeat-x;
+  background: url('../../../images/flower-banner.png') center repeat-x;
   max-height: 300px;
   min-height: 250px;
 }
 
-.title {
+.pdSharedTitle {
   .text-style(bolder, 3vh);
   position: relative;
   letter-spacing: 0.15em;
   background: transparent;
   border: transparent;
   padding: 1em 0 0 0.75em;
+  .allText();
+}
+
+.pdBannerTitle {
+  color: black;
+  .pdSharedTitle();
+}
+
+.pdTitle {
+  color: whitesmoke;
+  .pdSharedTitle();
 }
 
 .storeButton {
-  background-image: url('images/download-app-store.svg');
+  background-image: url('../../../images/download-app-store.svg');
   background-repeat: no-repeat;
   border: none;
   width: 125px;

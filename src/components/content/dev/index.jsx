@@ -5,8 +5,8 @@ import React from 'react';
 
 import './styles.less';
 
-const CodeProjectTitleBox = ({ title, dates, github }) => (
-  <ProjectTitleBox title={title} dates={dates} github={github} icon="GH" />
+const CodeProjectTitleBox = ({ title, dates, page }) => (
+  <ProjectTitleBox title={title} dates={dates} page={page} icon="GH" />
 );
 
 const Ape = () => (
@@ -14,9 +14,9 @@ const Ape = () => (
     <CodeProjectTitleBox
       title="Ape"
       dates="2021-present"
-      github="https://github.com/ApeWorX/ape"
+      page="https://github.com/ApeWorX/ape"
     />
-    <div className="contentText">
+    <div className="rootContextText">
       I am a principal mad-scientist for{' '}
       <ContentLink content="ApeWorX" href="https://apeworx.io/" />; we are
       building a multi-blockchain, Python development framework with a
@@ -33,9 +33,9 @@ const Py42 = () => (
     <CodeProjectTitleBox
       title="Py42 and Incydr"
       dates="2019-2021"
-      github="https://github.com/code42/py42"
+      page="https://github.com/code42/py42"
     />
-    <div className="contentText">
+    <div className="rootContextText">
       This was the pythonic way to talk to Code42's Incydr application, and it
       allowed us to integrate with various security tools of the time, including
       SIEM tools like Splunk and response tools like Palo-Alto Networks XSOAR.
@@ -51,9 +51,9 @@ const PatchDay = () => (
     <CodeProjectTitleBox
       title="PatchDay"
       dates="2016-present"
-      github="https://github.com/antazoey/patchday-ios"
+      page="#patchday"
     />
-    <div className="contentText">
+    <div className="rootContextText">
       An{' '}
       <ContentLink
         content="iOS app"
@@ -70,9 +70,9 @@ const Norboard = () => (
     <CodeProjectTitleBox
       title="Norboard"
       dates="2019"
-      github="https://github.com/antazoey/norboard"
+      page="https://github.com/antazoey/norboard"
     />
-    <div className="contentText">
+    <div className="rootContextText">
       An Arduino hobby project where you can play snake using a small screen and
       a potentiometer. As you score points, an LED blinks. See this{' '}
       <ContentLink
