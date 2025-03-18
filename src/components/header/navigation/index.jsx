@@ -11,8 +11,8 @@ const Navigation = () => {
   );
   return (
     <div id="navigation">
-      00{navigationButton('Haiku')}
-      01{navigationButton('Code')}
+      00{navigationButton('俳句')}
+      01{navigationButton('Dev')}
       10{navigationButton('Art')}11
     </div>
   );

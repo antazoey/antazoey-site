@@ -84,18 +84,85 @@ const Norboard = () => (
   </div>
 );
 
+const TreesHaveLegs = () => (
+  <div>
+    <CodeProjectTitleBox
+      title="Trees Have Legs"
+      dates="2023-present"
+      github="https://github.com/antazoey/trees-have-legs"
+    />
+    <div className="contentText">
+      A <ContentLink content="PyGame" href="https://www.pygame.org/" /> game
+      where you have to save your friends by getting them to your bon-fire while
+      trees comes alive and attack you.
+    </div>
+  </div>
+);
+
+const AudiusPy = () => (
+  <div>
+    <CodeProjectTitleBox
+      title="audius-py"
+      dates="2023-present"
+      github="https://github.com/antazoey/audius-py"
+    />
+    <div className="contentText">
+      An HTTP client and SDK for the Audius decentralized music platform.
+    </div>
+  </div>
+);
+
+const AfplayPy = () => (
+  <div>
+    <CodeProjectTitleBox
+      title="afplay-py"
+      dates="2023-present"
+      github="https://github.com/antazoey/afplay-py"
+    />
+    <div className="contentText">
+      A wrapper around macOS audio-file play command.
+    </div>
+  </div>
+);
+
 const CodeProjects = () => (
   <div>
+    <h1 className="projectTypeTitle">Hired Work</h1>
+    <br />
     <Ape />
-    <br />
-    <br />
-    <PatchDay />
     <br />
     <br />
     <Py42 />
     <br />
     <br />
+    <br />
+
+    <h1 className="projectTypeTitle">Python Projects</h1>
+    <br />
+    <TreesHaveLegs />
+    <br />
+    <br />
+    <AudiusPy />
+    <br />
+    <br />
+    <AfplayPy />
+    <br />
+    <br />
+    <br />
+
+    <h1 className="projectTypeTitle">Mobile Applications</h1>
+    <br />
+    <PatchDay />
+    <br />
+    <br />
+    <br />
+
+    <h1 className="projectTypeTitle">Micro-Electronics</h1>
+    <br />
     <Norboard />
+    <br />
+    <br />
+    <br />
   </div>
 );
 
