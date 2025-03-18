@@ -9,16 +9,25 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    env:
+      PORTFOLIO_SITE_PATH: './hosted-repo'
+
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Clone hosted source repository
         uses: actions/checkout@v4
         with:
           repository: antazoey/antazoey.github.io
           ref: main
-          path: ${{ env.PORTFOLIO_SITE_PATH }}
+          path: ./hosted-repo
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -39,5 +48,9 @@ jobs:
       - name: Deploy
         run: npm run deploy
 
-env:
-  PORTFOLIO_SITE_PATH: './hosted-repo'
+      - name: Push changes
+        run: |
+          cd $PORTFOLIO_SITE_PATH
+          git add .
+          git commit -m "Auto-deploy from CI" || echo "No changes to commit"
+          git push origin main
