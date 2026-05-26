@@ -69,7 +69,7 @@ const PatchDay = () => (
           Notice the gear icon in the top right corner. It leads to the settings
           view, which mostly controls the hormones schedule.
         </p>
-        <img src={FindSettings} alt={'Find settings'} />
+        <img className="pdImg" src={FindSettings} alt={'Find settings'} />
         <p className="contentText">
           Ensure the following settings are accurate; this is how you create
           your schedule.
@@ -84,7 +84,7 @@ const PatchDay = () => (
         <p className="contentText">
           <span style={{ color: 'green' }}>Quantity</span>: number of patches
         </p>
-        <img src={SetSettings} alt="Set Settings" />
+        <img className="pdImg" src={SetSettings} alt="Set Settings" />
       </Box>
       <br />
       <br />
@@ -96,21 +96,21 @@ const PatchDay = () => (
           The pills view is for extra pills you take in your schedule, such as
           Spironolactone or Progesterone.
         </p>
-        <img src={SelectedPillsTab} alt="Pills Tab" />
+        <img className="pdImg" src={SelectedPillsTab} alt="Pills Tab" />
         <p className="contentText">
           Select a pill from the list to edit or take it.
         </p>
-        <img src={DefaultPills} alt="Default pills" />
+        <img className="pdImg" src={DefaultPills} alt="Default pills" />
         <p className="contentText">
           Or, to add pills, use the plus arrow in the top right corner of the
           Pills View.
         </p>
-        <img src={NewPillButton} alt="New pill button" />
+        <img className="pdImg" src={NewPillButton} alt="New pill button" />
         <p className="contentText">
           By inserting a new pill (or tapping on / editing a current pill), you
           can adjust its properties.
         </p>
-        <img src={SetPillProps} alt="Set pill props" />
+        <img className="pdImg" src={SetPillProps} alt="Set pill props" />
       </Box>
       <br />
       <Box id="Sites">
@@ -123,7 +123,7 @@ const PatchDay = () => (
           patches (or rotate injection sites), PatchDay tells you the next
           location automatically.
         </p>
-        <img src={SimpleSites} alt="Simple sites" />
+        <img className="pdImg" src={SimpleSites} alt="Simple sites" />
         <p>
           Another use case might be that you use the same site 2x in a row. Here
           is how you would achieve that: Add more sites with the green plus
@@ -131,7 +131,7 @@ const PatchDay = () => (
           sites. Also choose the corresponding site image if you want the full
           effect. Here is what that would look like:
         </p>
-        <img src={DoubleSites} alt="Double sites" />
+        <img className="pdImg" src={DoubleSites} alt="Double sites" />
       </Box>
     </Box>
 
