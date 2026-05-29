@@ -1,0 +1,311 @@
+@antazoeyRed: #990066;
+@antazoeyGreen: #66ff99;
+@nerdFont: 'IBM Plex Mono', monospace;
+
+.azpay {
+  font-family: @nerdFont;
+  color: whitesmoke;
+  max-width: 70ch;
+  margin: 0 auto;
+  padding: 0 1em 3em;
+}
+
+.azpayIntro {
+  font-size: 1.05em;
+  line-height: 1.6;
+  margin: 0.5em 0 1.5em;
+  em {
+    color: @antazoeyGreen;
+    font-style: normal;
+  }
+}
+
+.azpayNetworks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+.azpayNetwork {
+  font-family: @nerdFont;
+  font-size: 0.9em;
+  color: fade(whitesmoke, 80%);
+  background: transparent;
+  border: 1px solid fade(whitesmoke, 25%);
+  border-radius: 999px;
+  padding: 0.35em 0.9em;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.azpayNetwork:hover {
+  border-color: @antazoeyGreen;
+  color: @antazoeyGreen;
+}
+
+.azpayNetworkActive {
+  color: black;
+  background: @antazoeyGreen;
+  border-color: @antazoeyGreen;
+}
+
+.azpayBar {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+  margin-bottom: 1em;
+}
+
+.azpayAccount {
+  color: @antazoeyGreen;
+  font-size: 1.05em;
+}
+
+.azpayBtn {
+  font-family: @nerdFont;
+  font-size: 1em;
+  color: black;
+  background: @antazoeyGreen;
+  border: 1px solid @antazoeyGreen;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.azpayBtn:hover:not(:disabled) {
+  box-shadow: 0 0 12px fade(@antazoeyGreen, 60%);
+}
+
+.azpayBtn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.azpayBtnGhost {
+  background: transparent;
+  color: @antazoeyGreen;
+}
+
+.azpayPay {
+  width: 100%;
+  font-size: 1.1em;
+  padding: 0.7em 1em;
+  margin-top: 0.5em;
+}
+
+.azpayPickerHead {
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: fade(whitesmoke, 60%);
+  margin-bottom: 0.25em;
+}
+
+.azpayPicker {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border: 1px solid fade(@antazoeyGreen, 35%);
+  border-radius: 6px;
+  padding: 0.75em;
+  margin-bottom: 1.25em;
+  max-width: 40ch;
+}
+
+.azpayWallet {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  font-family: @nerdFont;
+  font-size: 1em;
+  color: whitesmoke;
+  background: transparent;
+  border: 1px solid fade(whitesmoke, 20%);
+  border-radius: 4px;
+  padding: 0.6em 0.8em;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.2s ease;
+}
+
+.azpayWallet:hover:not(:disabled) {
+  border-color: @antazoeyGreen;
+  color: @antazoeyGreen;
+}
+
+.azpayWallet:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.azpayWalletIcon {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 4px;
+}
+
+.azpayHint {
+  font-size: 0.9em;
+  color: fade(whitesmoke, 70%);
+}
+
+.azpayBanner {
+  border: 1px solid @antazoeyRed;
+  background: fade(@antazoeyRed, 20%);
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+  margin-bottom: 1.25em;
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+  flex-wrap: wrap;
+}
+
+.azpayForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border: 1px solid fade(@antazoeyGreen, 25%);
+  border-radius: 8px;
+  padding: 1.25em;
+}
+
+.azpayLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  font-size: 0.95em;
+  color: fade(whitesmoke, 80%);
+}
+
+.azpayInput {
+  font-family: @nerdFont;
+  font-size: 1.3em;
+  color: @antazoeyGreen;
+  background: black;
+  border: 1px solid fade(@antazoeyGreen, 40%);
+  border-radius: 4px;
+  padding: 0.5em 0.6em;
+}
+
+.azpayInput:focus {
+  outline: none;
+  border-color: @antazoeyGreen;
+  box-shadow: 0 0 8px fade(@antazoeyGreen, 40%);
+}
+
+.azpayCheck {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  font-size: 0.95em;
+  cursor: pointer;
+  input {
+    accent-color: @antazoeyGreen;
+    width: 1.1em;
+    height: 1.1em;
+  }
+}
+
+.azpayStatus {
+  margin: 1.25em 0;
+  padding: 0.7em 0.9em;
+  border-radius: 6px;
+  font-size: 0.95em;
+  word-break: break-word;
+}
+
+.azpay-info {
+  border: 1px solid fade(whitesmoke, 35%);
+  color: whitesmoke;
+}
+
+.azpay-success {
+  border: 1px solid @antazoeyGreen;
+  color: @antazoeyGreen;
+  background: fade(@antazoeyGreen, 12%);
+}
+
+.azpay-error {
+  border: 1px solid @antazoeyRed;
+  color: lighten(@antazoeyRed, 35%);
+  background: fade(@antazoeyRed, 15%);
+}
+
+.azpayStatsHead {
+  margin-top: 2.5em;
+  margin-bottom: 0.6em;
+  font-size: 0.85em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: fade(whitesmoke, 55%);
+}
+
+.azpayStats {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.azpayStat {
+  flex: 1 1 8em;
+  text-align: center;
+  border: 1px solid fade(whitesmoke, 15%);
+  border-radius: 8px;
+  padding: 1em 0.5em;
+}
+
+.azpayStatNum {
+  display: block;
+  font-size: 1.6em;
+  color: @antazoeyGreen;
+}
+
+.azpayStatLabel {
+  display: block;
+  font-size: 0.8em;
+  color: fade(whitesmoke, 65%);
+  margin-top: 0.3em;
+}
+
+.azpayMine {
+  margin-top: 1.75em;
+  border: 1px solid fade(@antazoeyGreen, 35%);
+  border-radius: 8px;
+  padding: 1em 1.25em;
+  background: fade(@antazoeyGreen, 6%);
+}
+
+.azpayMineTitle {
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: fade(whitesmoke, 60%);
+  margin-bottom: 0.4em;
+}
+
+.azpayMineTotal {
+  font-size: 1.25em;
+  color: @antazoeyGreen;
+}
+
+.azpayMineList {
+  list-style: none;
+  padding: 0;
+  margin: 0.6em 0 0;
+  font-size: 0.95em;
+  color: whitesmoke;
+}
+
+.azpayMineList li {
+  padding: 0.15em 0;
+}
+
+.azpayMineNote {
+  margin-top: 0.5em;
+  font-size: 0.8em;
+  color: fade(whitesmoke, 50%);
+}

@@ -1,4 +1,5 @@
 import Art from '@components/content/art';
+import AZPay from '@components/content/azpay';
 import Dev from '@components/content/dev';
 import Haiku from '@components/content/haiku';
 import PatchDay from '@components/content/patchday';
@@ -17,6 +18,7 @@ const App = () => (
       <Route path="/dev" component={Dev} />
       <Route path="/art" component={Art} />
       <Route path="/patchday" component={PatchDay} />
+      <Route path="/azpay" component={AZPay} />
     </Switch>
     <Socials />
   </div>

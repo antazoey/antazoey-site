@@ -18,6 +18,12 @@ const Haiku = () => (
       ,
     </div>
     <div className="rootContextText">Won't you look around?</div>
+    <br />
+    <div className="rootContextText">
+      <Link className="contentLink" to="/azpay">
+        Support me!
+      </Link>
+    </div>
   </div>
 );
 
